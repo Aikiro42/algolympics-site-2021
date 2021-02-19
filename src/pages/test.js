@@ -6,13 +6,11 @@ import BlankContentfiller from "../components/blank-content-filler.js"
 
 import "../styles/global.css"
 
-export default function Home() {
+export default function Test() {
 	return (
 		<>
-			<Header isIndex={true} />
-			<div class="content wrapper">
-				<BlankContentfiller height="2000px" color="rgb(25,25,25)" />
-			</div>
+			<Header isIndex={false}/>
+			<BlankContentfiller height="2000px" color="rgb(25,25,25)" />
 			<Footer />
 		</>
 	)
