@@ -28,5 +28,44 @@
 			"description" : "universities that joined the competition accross Luzon",
 			"staticIconSrc": "/placeholder-logo.png"
 		}
-	]
+	],
+	
+	"prizes": {
+		"first" : "Php 12,000",
+		"second" : "Php 9,000",
+		"third" : "Php 6,000"
+	},
+	
+	"winners": {
+		"first" : [
+			{
+				"name": "Team DOG",
+				"members": [
+					"Luis Alvarado",
+					"Ivan Castillo",
+					"Tom Binbinon"
+				]
+			}
+		],
+		"second" : [
+			{
+				"name": "Team ANG",
+				"members": [
+					"Luis Alvarado",
+					"Leandro Paat",
+					"Joana Biado"
+				]
+			}
+		],
+		"third" : [
+			{
+				"name": "Team 7",
+				"members": [
+					"Uzumaki Naruto",
+					"Haruno Sakura",
+					"Uchiha Sasuke"
+				]
+			}
+		]
+	}
 }

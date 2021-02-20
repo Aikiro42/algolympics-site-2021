@@ -12,7 +12,7 @@ export default function Mechanics({ data }) {
 	return (
 		<>
 			<Header isIndex={false}/>
-			<div class="content wrapper">
+			<div class="content wrapper index">
 				<MechanicsLayout>
 					<div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} />
 				</MechanicsLayout>

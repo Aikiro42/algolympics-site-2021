@@ -47,7 +47,7 @@ export default function Header({isIndex}) {
 						<div class={navbarVisible ? "navlinks visible" : "navlinks"}>
 							<Navlink linkName="Mechanics" href="/mechanics/" />
 							<Navlink linkName="Live" href="/" />
-							<Navlink linkName="Prizes" href="/" />
+							<Navlink linkName="Prizes" href="/#prizes-section" />
 							<Navlink linkName="Sponsors" href="/" />
 							<Navlink linkName="Winners" href="/" />
 							<Navlink linkName="Probsets" href="/" />
