@@ -6,7 +6,7 @@ import BlankContentfiller from "../components/blank-content-filler.js"
 
 import Landing from "../components/index/landing.js"
 import AlgoIntro from "../components/index/algo-intro.js"
-import Numbers from "../components/index/Numbers.js"
+import Numbers from "../components/index/numbers.js"
 
 import "../styles/global.scss"
 
