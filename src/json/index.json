@@ -1,7 +1,13 @@
 {
 	"heading": "",
+	
 	"landing": {
 		"year": "2021",
 		"algoTheme": "Reach for the stars!"
+	},
+	
+	"intro": {
+		"staticImageSrc": "/placeholder-image.png",
+		"introText": "Algolympics is an intercollegiate programming competition open to all interested schools, colleges, and universities. The annual competition aims to help the students to solve different challenges with various difficulty levels."
 	}
 }

@@ -5,6 +5,7 @@ import Footer from "../components/footer.js"
 import BlankContentfiller from "../components/blank-content-filler.js"
 
 import Landing from "../components/index/landing.js"
+import AlgoIntro from "../components/index/algo-intro.js"
 
 import "../styles/global.scss"
 
@@ -14,6 +15,7 @@ export default function Home() {
 			<Header isIndex={true} />
 			<Landing />
 			<div class="content wrapper">
+				<AlgoIntro />
 				<BlankContentfiller height="2000px" color="rgba(25,25,25,0)" />
 			</div>
 			<Footer />
