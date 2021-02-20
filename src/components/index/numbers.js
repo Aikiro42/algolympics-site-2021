@@ -7,9 +7,9 @@ import indexData from "../../json/index.json"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-function Number({value, desc, iconSrc}) {
+function Number({value, desc, iconSrc, isSpecial}) {
 	return (
-		<div class="number"
+		<div class={isSpecial ? "number special" : "number"}
 			data-aos="fade-up"
             data-aos-delay="80"
             data-aos-duration="650">
@@ -29,6 +29,7 @@ export default function Numbers() {
 			{indexData.numbers.map((number) => (
 				<Number iconSrc={number.staticIconSrc} value={number.value} desc={number.description} />
 			))}
+			<Number isSpecial={true} iconSrc="/placeholder-logo.png" value="One goal" desc="Be the best team to win the competition."/>
 		</div>
 	)
 }

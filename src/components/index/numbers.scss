@@ -40,6 +40,31 @@ div#numbers-section{
 			text-align: right;
 		}
 	}
+	
+	div.number.special{
+		margin: 0;
+		width: 90%;
+		padding: 5%;
+		color: $acm-yellow;
+		flex-direction: column;
+		div.val-container{
+			flex-direction: column;
+			img.icon{
+				width: 20vh;
+				height: 20vh;
+			}
+			h1.value{
+				font-size: 5em;
+				text-align: center;
+			}
+		}
+		
+		p.description{
+			font-size: 2em;
+			text-align: center;
+		}
+	}
+	
 }
 
 @media (max-width: 768px){
@@ -64,6 +89,7 @@ div#numbers-section{
 				text-align: center;
 			}
 		}
+		
 		div.number:nth-child(even){
 			flex-direction: column;
 			div.val-container{
@@ -74,5 +100,6 @@ div#numbers-section{
 				text-align: center;
 			}
 		}
+		
 	}
 }
