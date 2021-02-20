@@ -13,13 +13,17 @@ div#numbers-section{
 		align-items: center;
 		margin: 1vh 15vw;
 		
-		img.icon{
-			width: 17.5vh;
-			height: 17.5vh;
-		}
-		h1.value{
-			font-size: 15vh;
-			margin: 0 3%;
+		div.val-container{
+			display: flex;
+			align-items: center;
+			img.icon{
+				width: 17.5vh;
+				height: 17.5vh;
+			}
+			h1.value{
+				font-size: 15vh;
+				margin: 0 3vw;
+			}
 		}
 		p.description{
 			font-size: 2em;
@@ -29,8 +33,46 @@ div#numbers-section{
 	div.number:nth-child(even){
 		align-self: flex-end;
 		flex-direction: row-reverse;
+		div.val-container{
+			flex-direction: row-reverse;
+		}
 		p.description{
 			text-align: right;
+		}
+	}
+}
+
+@media (max-width: 768px){
+	div#numbers-section{
+		padding: 0;
+		div.number{
+			margin: 0;
+			width: 90%;
+			padding: 5%;
+			flex-direction: column;
+			div.val-container{
+				img.icon{
+					width: 7vh;
+					height: 7vh;
+				}
+				h1.value{
+					font-size: 3em;
+				}
+			}
+			p.description{
+				font-size: 1.125em;
+				text-align: center;
+			}
+		}
+		div.number:nth-child(even){
+			flex-direction: column;
+			div.val-container{
+				flex-direction: row;
+			}
+			p.description{
+				font-size: 1.25em;
+				text-align: center;
+			}
 		}
 	}
 }

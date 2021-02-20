@@ -13,8 +13,10 @@ function Number({value, desc, iconSrc}) {
 			data-aos="fade-up"
             data-aos-delay="80"
             data-aos-duration="650">
-			<img class="icon" src={iconSrc} />
-			<h1 class="value">{value}</h1>
+			<div class="val-container">
+				<img class="icon" src={iconSrc} />
+				<h1 class="value">{value}</h1>
+			</div>
 			<p class="description">{desc}</p>
 		</div>
 	)

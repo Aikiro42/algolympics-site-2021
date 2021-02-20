@@ -20,7 +20,9 @@ export default function Component() {
 			
 			<img id="intro-image" src={indexData.intro.staticImageSrc} />
 			<div id="intro-text">
-				<h1>What is Algolympics?</h1>
+				<div class="title-container">
+					<h1>What is Algolympics?</h1>
+				</div>
 				<p>{indexData.intro.introText}</p>
 			</div>
 		</div>

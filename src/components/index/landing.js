@@ -8,7 +8,7 @@ import AlgoYear from "../algo-year.js";
 export default function Landing() {
 	return (
 		<>
-			<img id="landing-image" src="/sample-bg.png"/>
+			<img id="landing-image" src={indexData.landing.staticBgSrc} />
 			<div id="landing-text">
 				<div class="wrapper">
 					<h1>Algolympics <AlgoYear /></h1>

@@ -6,6 +6,7 @@ div.header{
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 9;
 	height: $header-height;
 	background: black;
 	color: white;
@@ -99,6 +100,22 @@ div.header.top{
 	height: $header-top-height;
 	div.title{
 		margin-left: $header-top-height*0.15;
+	}
+}
+
+@media (min-width: 1920px){
+	div.header{
+		div.wrapper{
+			div.navbar{
+				div.navlinks{
+					a{
+						span.navlink{
+							padding: 0.01*1080px 0.01*1920px;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
