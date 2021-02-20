@@ -43,7 +43,7 @@ export default function Header({isIndex}) {
 					<div class="navbar">
 						<img class="hamburger-icon" src={hamburgerImg} onClick={() => setNavbarVisible(!navbarVisible)}/>
 						<div class={navbarVisible ? "navlinks visible" : "navlinks"}>
-							<Navlink linkName="Mechanics" href="/" />
+							<Navlink linkName="Mechanics" href="/mechanics/" />
 							<Navlink linkName="Live" href="/" />
 							<Navlink linkName="Prizes" href="/" />
 							<Navlink linkName="Sponsors" href="/" />

@@ -4,13 +4,15 @@ import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import BlankContentfiller from "../components/blank-content-filler.js"
 
-import "../styles/global.css"
+import "../styles/global.scss"
 
 export default function Test() {
 	return (
 		<>
 			<Header isIndex={false}/>
-			<BlankContentfiller height="2000px" color="rgb(25,25,25)" />
+			<div class="content wrapper">
+				<BlankContentfiller height="2000px" color="rgb(25,25,25)" />
+			</div>
 			<Footer />
 		</>
 	)
