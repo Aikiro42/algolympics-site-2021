@@ -26,9 +26,10 @@ div.header{
 			padding: $header-height*0.15;
 			
 			img{
-				background: red;
 				width: $header-height*0.7;
 				height: $header-height*0.7;
+				object-fit: contain;
+				object-position: center center;
 			}
 			
 			h1{

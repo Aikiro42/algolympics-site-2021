@@ -9,5 +9,23 @@
 	"intro": {
 		"staticImageSrc": "/placeholder-image.png",
 		"introText": "Algolympics is an intercollegiate programming competition open to all interested schools, colleges, and universities. The annual competition aims to help the students to solve different challenges with various difficulty levels."
-	}
+	},
+	
+	"numbers": [
+		{
+			"value": "500+",
+			"description" : "participants that took the challenge from the past six years",
+			"staticIconSrc": "/placeholder-logo.png"
+		},
+		{
+			"value": "18",
+			"description" : "teams that made it to the top spots",
+			"staticIconSrc": "/placeholder-logo.png"
+		},
+		{
+			"value": "20+",
+			"description" : "universities that joined the competition accross Luzon",
+			"staticIconSrc": "/placeholder-logo.png"
+		}
+	]
 }

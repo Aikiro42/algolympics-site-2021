@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 
 import hamburgerImg from "../assets/images/hamburger-icon.png"
 
+import AlgoYear from "./algo-year.js"
+
 import "./header.scss"
 
 function Navlink({linkName, href}) {
@@ -36,8 +38,8 @@ export default function Header({isIndex}) {
 				<div class="wrapper">
 					<Link to="/">
 					<div class="title">
-						<img />
-						<h1>Algolympics <span class="algo-year">2021</span></h1>
+						<img src="/site-logo.png"/>
+						<h1>Algolympics <AlgoYear /></h1>
 					</div>
 					</Link>
 					<div class="navbar">

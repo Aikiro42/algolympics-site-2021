@@ -6,6 +6,7 @@ import BlankContentfiller from "../components/blank-content-filler.js"
 
 import Landing from "../components/index/landing.js"
 import AlgoIntro from "../components/index/algo-intro.js"
+import Numbers from "../components/index/Numbers.js"
 
 import "../styles/global.scss"
 
@@ -16,6 +17,7 @@ export default function Home() {
 			<Landing />
 			<div class="content wrapper">
 				<AlgoIntro />
+				<Numbers />
 				<BlankContentfiller height="2000px" color="rgba(25,25,25,0)" />
 			</div>
 			<Footer />

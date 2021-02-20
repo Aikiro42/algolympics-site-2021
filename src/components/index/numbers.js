@@ -1,0 +1,32 @@
+import React, {useState, useEffect} from "react"
+import { Link } from "gatsby"
+
+import "./numbers.scss"
+import indexData from "../../json/index.json"
+
+import AOS from "aos"
+import "aos/dist/aos.css"
+
+function Number({value, desc, iconSrc}) {
+	return (
+		<div class="number"
+			data-aos="fade-up"
+            data-aos-delay="80"
+            data-aos-duration="650">
+			<img class="icon" src={iconSrc} />
+			<h1 class="value">{value}</h1>
+			<p class="description">{desc}</p>
+		</div>
+	)
+}
+
+export default function Numbers() {
+	return (
+		<div id="numbers-section">
+			<Number iconSrc="/placeholder-logo.png" value="69" desc="Haha funi sex number hahaha"/>
+			{indexData.numbers.map((number) => (
+				<Number iconSrc={number.staticIconSrc} value={number.value} desc={number.description} />
+			))}
+		</div>
+	)
+}

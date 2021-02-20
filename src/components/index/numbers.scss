@@ -1,0 +1,36 @@
+@import "../../styles/var.scss";
+
+
+div#numbers-section{
+	padding: 1.5%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	div.number{
+	
+		display: flex;
+		align-items: center;
+		margin: 1vh 15vw;
+		
+		img.icon{
+			width: 17.5vh;
+			height: 17.5vh;
+		}
+		h1.value{
+			font-size: 15vh;
+			margin: 0 3%;
+		}
+		p.description{
+			font-size: 2em;
+		}
+	}
+	
+	div.number:nth-child(even){
+		align-self: flex-end;
+		flex-direction: row-reverse;
+		p.description{
+			text-align: right;
+		}
+	}
+}
