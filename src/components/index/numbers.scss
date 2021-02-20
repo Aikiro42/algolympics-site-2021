@@ -2,16 +2,19 @@
 
 
 div#numbers-section{
+
 	padding: 1.5%;
 	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	
 	div.number{
 	
 		display: flex;
 		align-items: center;
-		margin: 1vh 15vw;
+		margin: 1vh auto;
+		width: 70%;
 		
 		div.val-container{
 			display: flex;
@@ -19,10 +22,12 @@ div#numbers-section{
 			img.icon{
 				width: 17.5vh;
 				height: 17.5vh;
+				max-width: 0.175*1080px;
+				max-height: 0.175*1080px;
 			}
 			h1.value{
-				font-size: 15vh;
-				margin: 0 3vw;
+				font-size: 5em;
+				margin: 0 15px;
 			}
 		}
 		p.description{
@@ -50,8 +55,8 @@ div#numbers-section{
 		div.val-container{
 			flex-direction: column;
 			img.icon{
-				width: 20vh;
-				height: 20vh;
+				width: 25vh;
+				height: 25vh;
 			}
 			h1.value{
 				font-size: 5em;
@@ -65,6 +70,20 @@ div#numbers-section{
 		}
 	}
 	
+}
+
+@media (min-width: 1920px){
+	div#numbers-section{
+		div.number{		
+			div.val-container{
+				img.icon{
+
+				}
+				h1.value{
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 768px){
