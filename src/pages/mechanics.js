@@ -24,13 +24,13 @@ export default function Mechanics({ data }) {
 }
 
 export const query = graphql`
-			query {
-				allMarkdownRemark(filter: {fileAbsolutePath: {regex: "markdown/mechanics.md/"}}) {
-					edges {
-						node {
-							html
-						}
-					}
+	query {
+		allMarkdownRemark(filter: {fileAbsolutePath: {regex: "markdown/mechanics.md/"}}) {
+			edges {
+				node {
+					html
 				}
 			}
+		}
+	}
 `
