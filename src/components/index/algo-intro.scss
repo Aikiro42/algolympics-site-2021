@@ -4,23 +4,37 @@ div#algo-intro-section{
 	display: flex;
 	align-items: center;
 	color: white;
-	max-height: 0.5*1080px;
 	padding: 1.5% 0;
 	
 	img{
 		padding: 0 1.5%;
 		width: 35%;
-		height: 30vh;
 		object-fit: cover;
 		object-position: center center;
 		border-top-right-radius: 15vh;
 		border-bottom-left-radius: 15vh;
+		align-self: stretch;
 	}
 	
 	div#intro-text{
 		padding: 1.5%;
 		font-size: 1.5em;
 		border-left: 1px solid rgba(255,255,255,0.5);
+
+		div#intro-md{
+			p{
+				padding: 1vw 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 1920px){
+	div#algo-intro-section{
+		img{
+			border-top-right-radius: 0.15*1080px;
+			border-bottom-left-radius: 0.15*1080px;
+		}
 	}
 }
 
@@ -29,7 +43,7 @@ div#algo-intro-section{
 		flex-direction: column;
 		padding: 0;
 		height: auto;
-		
+		max-height: none;
 		img{
 			padding: 0;
 			border: none;
@@ -45,6 +59,7 @@ div#algo-intro-section{
 		
 			padding: 0;
 			font-size: 1.25em;
+
 			div.title-container{
 				background: linear-gradient(45deg, rgba(5,5,5,0.5) 0%, rgba(0,0,0,0) 100%);
 				h1{
@@ -55,8 +70,10 @@ div#algo-intro-section{
 				}
 			}
 			
-			p{
-				padding: 3vw;
+			div#intro-md{
+				p{
+					padding: 3vw;
+				}
 			}
 		}
 	}

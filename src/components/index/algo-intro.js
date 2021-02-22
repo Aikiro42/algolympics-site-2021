@@ -1,4 +1,5 @@
 import React, {useEffect} from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import "./algo-intro.scss"
 import indexData from "../../json/index.json";
@@ -12,18 +13,41 @@ export default function Component() {
 		AOS.init();
 		AOS.refresh();
 	});
+
+	const data = useStaticQuery(
+		graphql`
+			query {
+				allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/algo-intro.md/"}}) {
+					edges {
+						node {
+							html
+						}
+					}
+				}
+			}
+		`
+	)
 	return (
-		<div id="algo-intro-section"
-			data-aos="fade-up"
-            data-aos-delay="80"
-            data-aos-duration="650">
-			
+		<div id="algo-intro-section">
 			<img id="intro-image" src={indexData.intro.staticImageSrc} />
 			<div id="intro-text">
 				<div class="title-container">
-					<h1>What is Algolympics?</h1>
+					<h1
+						data-aos="fade-up"
+						data-aos-delay="80"
+						data-aos-duration="650"
+					>
+						What is Algolympics?
+					</h1>
 				</div>
-				<p>{indexData.intro.introText}</p>
+
+				<div
+					id="intro-md"
+					dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} 
+					data-aos="fade-up"
+            		data-aos-delay="80"
+            		data-aos-duration="650"
+				/>
 			</div>
 		</div>
 	)
