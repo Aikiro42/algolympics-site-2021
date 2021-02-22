@@ -1,0 +1,75 @@
+@import "../../styles/var.scss";
+
+div#faq-layout{
+	color: white;
+	width: 80%;
+	padding: 5%;
+	margin: auto;
+	font-size: 1.25em;
+	
+	h1#page-title{
+		color: white;
+		font-size: 4em;
+		text-align: center;
+		padding: 1.5%;
+		border-bottom: 1px solid white;
+		margin-bottom: 2%;
+	}
+
+	h1, strong{
+		color: $acm-yellow;
+	}
+	
+	p{
+		margin: 3% 0;
+	}
+	
+	a{
+		color: $acm-orange;
+		text-decoration: underline;
+	}
+	
+	li{
+		margin: 2% 0;
+		margin-left: 5%;
+	}
+	
+}
+
+@media (max-width: 768px){
+	div#mechanics-layout{
+		font-size: 1em;
+		
+		h1#page-title{
+			margin: 0;
+			font-size: 2.5em;
+			text-align: left;
+			padding: 3%;
+			padding-left: 0;
+			margin-bottom: 4%;
+		}
+		
+		h1{
+			margin: 4% 0;
+		}
+		
+		p{
+			margin: 6% 0;
+		}
+		
+		a{
+			color: $acm-orange;
+		}
+		
+		strong{
+			color: $acm-red;
+		}
+		
+		li{
+			margin: 2% 0;
+			margin-left: 5%;
+		}
+		
+	}
+
+}

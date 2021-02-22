@@ -52,7 +52,7 @@ export default function Header({isIndex}) {
 							<Navlink linkName="Prizes" href="/#prizes-section" />
 							<Navlink linkName="Sponsors" href="/" />
 							<Navlink linkName="Probsets" href="/" />
-							<Navlink linkName="FAQ" href="/" />
+							<Navlink linkName="FAQ" href="/faq/" />
 							<Navlink linkName="Contact" href="/contact/" />
 							<Navlink linkName="test_link" href="/test/" />
 						</div>
