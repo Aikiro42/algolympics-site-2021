@@ -7,7 +7,12 @@ img#landing-image{
 	height: 100%;
 	background: gray;
 	object-fit: cover;
-	object-position: center center;
+	object-position: center 0%;
+	transition: opacity 0.2s;
+}
+
+img#landing-image.scrolled{
+	opacity: 25%;
 }
 
 div#landing-text{

@@ -22,14 +22,15 @@ export default function Header({isIndex}) {
 	const [navbarVisible, setNavbarVisible] = useState(false);
 	
 	useEffect(() => {
-	const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) / 2;
-	const handleScroll = () => {
-		const isScrolled = window.scrollY > vh;
-		if (isScrolled !== scrolled) {
-			setScrolled(!scrolled);
+		const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) / 2;
+		const handleScroll = () => {
+			const isScrolled = window.scrollY > vh;
+			if (isScrolled !== scrolled) {
+				setScrolled(!scrolled);
+			}
 		}
-	}
-	document.addEventListener('scroll', handleScroll);
+		document.addEventListener('scroll', handleScroll);
+		return () => {document.removeEventListener(`scroll`, handleScroll);}
 	});
 	
 	return (
@@ -49,10 +50,9 @@ export default function Header({isIndex}) {
 							<Navlink linkName="Live" href="/" />
 							<Navlink linkName="Prizes" href="/#prizes-section" />
 							<Navlink linkName="Sponsors" href="/" />
-							<Navlink linkName="Winners" href="/" />
 							<Navlink linkName="Probsets" href="/" />
 							<Navlink linkName="FAQ" href="/" />
-							<Navlink linkName="Contact" href="/" />
+							<Navlink linkName="Contact" href="/contact/" />
 							<Navlink linkName="test_link" href="/test/" />
 						</div>
 					</div>
