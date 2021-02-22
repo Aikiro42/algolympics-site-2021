@@ -36,8 +36,13 @@ export default function Landing() {
 			<img id="landing-image" class={opaque ? "scrolled" : ""} src={indexData.landing.staticBgSrc} />
 			<div id="landing-text">
 				<div class="wrapper">
-					<h1>Algolympics <AlgoYear /></h1>
-					<p id="algo-theme">{indexData.landing.algoTheme}</p>
+					<img src={indexData.landing.bigAlgoLogoSrc} />
+					<h1>
+						<span class="red">ALGO</span>
+						<span class="yellow">LYM</span>
+						<span class="green">PICS</span>
+						<span class="blue"> 2021</span>
+					</h1>
 				</div>
 			</div>
 			<div id="landing-spacer"></div>

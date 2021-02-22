@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react"
 import { Link } from "gatsby"
 
 import hamburgerImg from "../assets/images/hamburger-icon.png"
+import headerImg from "../assets/images/header-icon.png"
 
 import AlgoYear from "./algo-year.js"
 
@@ -39,7 +40,7 @@ export default function Header({isIndex}) {
 				<div class="wrapper">
 					<Link to="/">
 					<div class="title">
-						<img src="/site-logo.png"/>
+						<img src={headerImg} />
 						<h1>Algolympics <AlgoYear /></h1>
 					</div>
 					</Link>

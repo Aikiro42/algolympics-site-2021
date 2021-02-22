@@ -4,7 +4,8 @@
 	"landing": {
 		"year": "2021",
 		"algoTheme": "Let your code shine",
-		"staticBgSrc": "/assets/img/background.png"
+		"staticBgSrc": "/assets/img/background.png",
+		"bigAlgoLogoSrc": "/assets/img/algolympics-logo-big.png"
 	},
 	
 	"intro": {

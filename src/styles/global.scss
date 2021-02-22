@@ -21,6 +21,7 @@ body{
 
 h1{
 	font-family: "Montserrat";
+	font-weight: 500;
 }
 
 a{
@@ -55,3 +56,15 @@ a{
 	background: $acm-orange;
 }
 
+span.red{
+	color: $acm-red;
+}
+span.yellow{
+	color: $acm-yellow;
+}
+span.green{
+	color: $acm-green;
+}
+span.blue{
+	color: $acm-blue;
+}
