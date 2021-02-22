@@ -8,8 +8,38 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 
 function Number({value, desc, iconSrc, isSpecial}) {
+
+	if(isSpecial){
+		return (
+			<div class="number special">
+				<div class="val-container">
+					<img class="icon"
+						data-aos="fade-up"
+						data-aos-delay="0"
+						data-aos-duration="650" 
+						src={iconSrc}
+					/>
+					<h1 class="value"
+						data-aos="fade-up"
+						data-aos-delay="100"
+						data-aos-duration="650"
+					>
+						{value}
+					</h1>
+				</div>
+				<p class="description"
+					data-aos="fade-up"
+					data-aos-delay="200"
+					data-aos-duration="650"
+				>
+					{desc}
+				</p>
+			</div>
+		)
+	}
+
 	return (
-		<div class={isSpecial ? "number special" : "number"}
+		<div class="number"
 			data-aos="fade-up"
             data-aos-delay="80"
             data-aos-duration="650">

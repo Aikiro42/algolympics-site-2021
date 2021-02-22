@@ -24,6 +24,8 @@ div#numbers-section{
 				height: 17.5vh;
 				max-width: 0.175*1080px;
 				max-height: 0.175*1080px;
+				object-fit: contain;
+				object-position: center center;
 			}
 			h1.value{
 				font-size: 5em;
