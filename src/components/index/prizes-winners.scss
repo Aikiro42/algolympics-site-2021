@@ -94,7 +94,7 @@ div#prizes-section{
 		}
 		div.banner-content{
 			background: $acm-silver-dark;
-			padding-bottom: 3 * $podium-height;
+			padding-bottom: 2 * $podium-height;
 		}
 	}
 	
@@ -110,11 +110,13 @@ div#prizes-section{
 }
 
 @media (max-width: 768px){
+
 	div#prizes-section{
 		font-size: 0.5em;
 		div.banner{
 			div.banner-content{
-				div.winner-list{
+				div.winner-list{	
+					display: none;
 					a.winner-link{
 						margin: 3vh 3%;
 						$diameter: 15vh;

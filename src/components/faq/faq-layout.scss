@@ -37,7 +37,7 @@ div#faq-layout{
 }
 
 @media (max-width: 768px){
-	div#mechanics-layout{
+	div#faq-layout{
 		font-size: 1em;
 		
 		h1#page-title{
@@ -55,14 +55,6 @@ div#faq-layout{
 		
 		p{
 			margin: 6% 0;
-		}
-		
-		a{
-			color: $acm-orange;
-		}
-		
-		strong{
-			color: $acm-red;
 		}
 		
 		li{

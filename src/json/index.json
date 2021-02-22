@@ -113,5 +113,28 @@
 				"link": "https://codeforces.com"
 			}
 		]
-	}
+	},
+
+	"sponsors" : [
+		{
+			"sponsorName": "Accenture",
+			"staticLogoSrc": "/assets/img/sponsors/accenture/accenture-logo.png",
+			"sponsorLink": "https://www.accenture.com/ph-en"
+		},
+		{
+			"sponsorName": "Navitaire",
+			"staticLogoSrc": "/assets/img/sponsors/navitaire/navitaire-amadeus-rgb.png",
+			"sponsorLink": "https://www.navitaire.com/"
+		},
+		{
+			"sponsorName": "Calibr8",
+			"staticLogoSrc": "/assets/img/sponsors/calibr8/calibr8-full-logo-transparent.png",
+			"sponsorLink": "http://www.calibr8digital.com/"
+		},
+		{
+			"sponsorName": "FlexisourceIT",
+			"staticLogoSrc": "/assets/img/sponsors/flexisourceIT/flexisourceit-color.png",
+			"sponsorLink": "https://flexisourceit.com.au/"
+		}
+	]
 }

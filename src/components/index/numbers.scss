@@ -102,10 +102,19 @@ div#numbers-section{
 			flex-direction: column;
 			div.val-container{
 				flex-direction: row;
+				h1.value{
+					font-size: 3em;
+				}
 			}
 			p.description{
 				font-size: 1.25em;
 				text-align: center;
+			}
+		}
+
+		div.number.special{
+			div.val-container{
+				flex-direction: column;
 			}
 		}
 		
