@@ -12,24 +12,21 @@ function Number({value, desc, iconSrc, isSpecial}) {
 	if(isSpecial){
 		return (
 			<div class="number special">
-				<div class="val-container">
+				<div class="val-container"
+					data-aos="fade-up"
+					data-aos-delay="0"
+					data-aos-duration="650"
+				>
 					<img class="icon"
-						data-aos="fade-up"
-						data-aos-delay="0"
-						data-aos-duration="650" 
 						src={iconSrc}
 					/>
-					<h1 class="value"
-						data-aos="fade-up"
-						data-aos-delay="100"
-						data-aos-duration="650"
-					>
+					<h1 class="value">
 						{value}
 					</h1>
 				</div>
 				<p class="description"
 					data-aos="fade-up"
-					data-aos-delay="200"
+					data-aos-delay="100"
 					data-aos-duration="650"
 				>
 					{desc}
@@ -55,7 +52,6 @@ function Number({value, desc, iconSrc, isSpecial}) {
 export default function Numbers() {
 	return (
 		<div id="numbers-section">
-			<Number iconSrc="/placeholder-logo.png" value="69" desc="Haha funi sex number hahaha"/>
 			{indexData.numbers.map((number) => (
 				<Number iconSrc={number.staticIconSrc} value={number.value} desc={number.description} />
 			))}

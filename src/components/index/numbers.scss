@@ -10,10 +10,11 @@ div#numbers-section{
 	align-items: flex-start;
 	
 	div.number{
-	
+		
 		display: flex;
 		align-items: center;
 		margin: 1vh auto;
+		padding: 2vh;
 		width: 70%;
 		
 		div.val-container{
@@ -72,20 +73,6 @@ div#numbers-section{
 		}
 	}
 	
-}
-
-@media (min-width: 1920px){
-	div#numbers-section{
-		div.number{		
-			div.val-container{
-				img.icon{
-
-				}
-				h1.value{
-				}
-			}
-		}
-	}
 }
 
 @media (max-width: 768px){
