@@ -16,7 +16,7 @@
 		{
 			"value": "500+",
 			"description" : "participants that took the challenge from the past six years",
-			"staticIconSrc": "/placeholder-logo.png"
+			"staticIconSrc": "/assets/img/location-icon.png"
 		},
 		{
 			"value": "19",
@@ -26,14 +26,14 @@
 		{
 			"value": "20+",
 			"description" : "universities that joined the competition accross Luzon",
-			"staticIconSrc": "/placeholder-logo.png"
+			"staticIconSrc": "/assets/img/location-icon.png"
 		}
 	],
 	
 	"prizes": {
-		"first" : "Php 12,000",
-		"second" : "Php 9,000",
-		"third" : "Php 6,000"
+		"first" : "₱ 12,000",
+		"second" : "₱ 9,000",
+		"third" : "₱ 6,000"
 	},
 	
 	"winners": {
@@ -45,27 +45,72 @@
 					"Luis Alvarado",
 					"Ivan Castillo",
 					"Tom Binbinon"
-				]
+				],
+				"link": "https://codeforces.com"
+			},
+			{
+				"logoSrc": "https://cdn.discordapp.com/attachments/736428315736408068/812800285155000330/108862443_3363512483688174_2613543767902166127_n.png",
+				"name": "Team DOG",
+				"members": [
+					"Luis Alvarado",
+					"Ivan Castillo",
+					"Tom Binbinon"
+				],
+				"link": "https://codeforces.com"
+			},
+			{
+				"logoSrc": "https://cdn.discordapp.com/attachments/736428315736408068/812800285155000330/108862443_3363512483688174_2613543767902166127_n.png",
+				"name": "Team DOG",
+				"members": [
+					"Luis Alvarado",
+					"Ivan Castillo",
+					"Tom Binbinon"
+				],
+				"link": "https://codeforces.com"
+			},
+			{
+				"logoSrc": "https://cdn.discordapp.com/attachments/736428315736408068/812800285155000330/108862443_3363512483688174_2613543767902166127_n.png",
+				"name": "Team DOG",
+				"members": [
+					"Luis Alvarado",
+					"Ivan Castillo",
+					"Tom Binbinon"
+				],
+				"link": "https://codeforces.com"
+			},
+			{
+				"logoSrc": "https://cdn.discordapp.com/attachments/736428315736408068/812800285155000330/108862443_3363512483688174_2613543767902166127_n.png",
+				"name": "Team DOG",
+				"members": [
+					"Luis Alvarado",
+					"Ivan Castillo",
+					"Tom Binbinon"
+				],
+				"link": "https://codeforces.com"
 			}
 		],
 		"second" : [
 			{
+				"logoSrc": "",
 				"name": "Team ANG",
 				"members": [
 					"Luis Alvarado",
 					"Leandro Paat",
 					"Joana Biado"
-				]
+				],
+				"link": "https://codeforces.com"
 			}
 		],
 		"third" : [
 			{
+				"logoSrc": "",
 				"name": "Team 7",
 				"members": [
 					"Uzumaki Naruto",
 					"Haruno Sakura",
 					"Uchiha Sasuke"
-				]
+				],
+				"link": "https://codeforces.com"
 			}
 		]
 	}
