@@ -50,11 +50,11 @@ export default function Header({isIndex}) {
 							<Navlink linkName="Mechanics" href="/mechanics/" />
 							<Navlink linkName="Live" href="/" />
 							<Navlink linkName="Prizes" href="/#prizes-section" />
+							<Navlink linkName="Winners" href="/" />
 							<Navlink linkName="Sponsors" href="/#sponsors-section" />
 							<Navlink linkName="Probsets" href="/" />
 							<Navlink linkName="FAQ" href="/faq/" />
 							<Navlink linkName="Contact" href="/contact/" />
-							<Navlink linkName="test_link" href="/test/" />
 						</div>
 					</div>
 				</div>

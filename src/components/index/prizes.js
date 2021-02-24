@@ -1,19 +1,11 @@
 import React, {useState, useEffect} from "react"
 import { Link } from "gatsby"
 
-import "./prizes-winners.scss"
+import "./prizes.scss"
 import indexData from "../../json/index.json"
 
 import AOS from "aos"
 import "aos/dist/aos.css"
-
-function Winner({logoSrc, name, members, link}){
-	return(
-		<a class="winner-link" href={link}>
-			<img src={logoSrc} />
-		</a>
-	)
-}
 
 function Banner({place, prize, winners}) {
 	
@@ -50,12 +42,6 @@ function Banner({place, prize, winners}) {
 				<div class="prize">
 					<h2>{prize_heading}</h2>
 					<p>{prize}</p>
-				</div>
-				<div class="winner-list">
-				<h3>Previous Winners</h3>
-					{winners.map((winner) => {
-						return <Winner logoSrc={winner.logoSrc} name={winner.name} members={winner.members} link={winner.link}/>
-					})}
 				</div>
 			</div>
 		</div>
