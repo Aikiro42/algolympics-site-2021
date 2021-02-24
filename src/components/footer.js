@@ -1,18 +1,72 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 import "./footer.scss"
+import indexData from "../json/index.json"
 
-function Subcomponent() {
+function Social({type, link}){
+	var social_logo = "";
+	var link_href = link;
+	var link_type = ""
+	switch(type){
+		case "facebook":
+			social_logo = "/assets/img/social/facebook-logo.png";
+			link_type = "Facebook";
+			break;
+		case "twitter":
+			social_logo="/assets/img/social/twitter-logo.png";
+			link_type = "Twitter";
+			break;
+		default:
+			social_logo="/placeholder-logo.png";
+			link_href = "";
+			return <></>;
+			break;
+	}
 	return (
-		<p>I am a subcomponent</p>
+		<a class="social" href={link_href}>
+			<img src={social_logo} />
+			<span>{link_type}</span>
+		</a>
 	)
 }
 
-export default function Component() {
+function Sponsor({logoSrc, link}) {
+	return (
+		<a class="sponsor" href={link}>
+			<img src={logoSrc} />
+		</a>
+	)
+}
+
+export default function Footer() {
 	return (
 		<div class="footer incompressible">
-			<div class="wrapper">
+			<div class="top">
+				<div class="wrapper">
+					<div class="other-links section">
+					</div>
+					<div class="socials section">
+						<h2>Contact us</h2>
+						{indexData.socials.map((social) => {
+							return(
+								<Social type={social.type} link={social.link} />
+							)
+						})}
+					</div>
+					<div class="sponsors section">
+						<h2>Our Sponsors</h2>
+						{indexData.sponsors.map((sponsor) => {
+							console.log(sponsor);
+							return(
+								<Sponsor link={sponsor.sponsorLink} logoSrc={sponsor.staticLogoSrcAlt} />
+							)
+						})}
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+					<span class="copyright"></span>
 			</div>
 		</div>
 	)

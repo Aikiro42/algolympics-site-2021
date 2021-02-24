@@ -119,21 +119,25 @@
 		{
 			"sponsorName": "Accenture",
 			"staticLogoSrc": "/assets/img/sponsors/accenture/accenture-logo.png",
+			"staticLogoSrcAlt": "/assets/img/sponsors/accenture/accenture-logo-allwhite.png",
 			"sponsorLink": "https://www.accenture.com/ph-en"
 		},
 		{
 			"sponsorName": "Navitaire",
 			"staticLogoSrc": "/assets/img/sponsors/navitaire/navitaire-amadeus-rgb.png",
+			"staticLogoSrcAlt": "/assets/img/sponsors/navitaire/navitaire-amadeus-white.png",
 			"sponsorLink": "https://www.navitaire.com/"
 		},
 		{
 			"sponsorName": "Calibr8",
 			"staticLogoSrc": "/assets/img/sponsors/calibr8/calibr8-full-logo-transparent.png",
+			"staticLogoSrcAlt": "/assets/img/sponsors/calibr8/calibr8-full-logo-white-transparent.png",
 			"sponsorLink": "http://www.calibr8digital.com/"
 		},
 		{
 			"sponsorName": "FlexisourceIT",
 			"staticLogoSrc": "/assets/img/sponsors/flexisourceIT/flexisourceit-color.png",
+			"staticLogoSrcAlt": "/assets/img/sponsors/flexisourceIT/flexisourceit-white-horizontal.png",
 			"sponsorLink": "https://flexisourceit.com.au/"
 		}
 	],
