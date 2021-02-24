@@ -17,3 +17,9 @@ $acm-silver: rgb(200,200,200);
 $acm-silver-dark: rgb(100,100,100);
 $acm-bronze: $acm-orange;
 $acm-bronze-dark: #915400;
+
+$link-hover-bg: linear-gradient(0deg, rgba(255,255,255,0.125) 0%, rgba(255,255,255,0) 100%);
+$link-hover-border: 1px solid white;
+$link-active-bg: linear-gradient(0deg, rgba(1,130,172,0.125) 0%, rgba(255,255,255,0) 100%);
+$link-active-border: 1px solid #0182ac;
+

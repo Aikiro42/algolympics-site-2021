@@ -6,6 +6,10 @@
 	font-family: "Open Sans", sans-serif;
 }
 
+.incompressible{
+	min-width: 250px;
+}
+
 code{
 	font-family: "Courier New", Courier, Consolas, monospace;
 	background: rgb(50,50,50);
@@ -22,6 +26,23 @@ body{
 h1{
 	font-family: "Montserrat";
 	font-weight: 500;
+	font-size: 3em;
+}
+
+p{
+	font-size: 1.25em;
+}
+
+@media (max-width: 768px){
+	h1{
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width: 400px){
+	h1{
+		font-size: 2em;
+	}
 }
 
 a{
