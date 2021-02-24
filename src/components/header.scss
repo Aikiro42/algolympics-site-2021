@@ -1,3 +1,5 @@
+@import "../styles/var.scss";
+
 $header-top-height: 100px;
 $header-height: 80px;
 $m-header-height: 70px;
@@ -44,7 +46,7 @@ div.header{
 		}
 		
 		div.title:active{
-			background: rgb(252*0.125,146*0.125,0);
+			background: rgba(1, 130, 172, 0.125);
 		}
 		
 		div.navbar{
@@ -73,17 +75,13 @@ div.header{
 				}
 				
 				span.navlink:hover{
-					background: linear-gradient(0deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 100%);
-
-					//background: rgba(255,255,255,0.25);
-					border-bottom: 1px solid white;
+					background: $link-hover-bg;
+					border-bottom: $link-hover-border;
 				}
 				
 				span.navlink:active{
-					background: linear-gradient(0deg, rgba(252, 146, 0,0.25) 0%, rgba(255,255,255,0) 100%);
-
-					//background: rgba(255,255,255,0.25);
-					border-bottom: 1px solid #fc9200;
+					background: $link-active-bg;
+					border-bottom: $link-active-border;
 				}
 			}
 			

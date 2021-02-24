@@ -71,4 +71,4 @@ Prizes:
 
 # How can I contact the organizers?
 
-You may contact UP ACM through [Facebook](fb.com/upacm), [Twitter](twitter.com/upacm), and email: `algolympics@upacm.net`.
+You may contact UP ACM through [Facebook](https://fb.com/upacm), [Twitter](https://twitter.com/upacm), and email: `algolympics@upacm.net`.

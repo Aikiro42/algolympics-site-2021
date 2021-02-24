@@ -5,7 +5,6 @@ div#faq-layout{
 	width: 80%;
 	padding: 5%;
 	margin: auto;
-	font-size: 1.25em;
 	
 	h1#page-title{
 		color: white;
@@ -38,7 +37,6 @@ div#faq-layout{
 
 @media (max-width: 768px){
 	div#faq-layout{
-		font-size: 1em;
 		
 		h1#page-title{
 			margin: 0;

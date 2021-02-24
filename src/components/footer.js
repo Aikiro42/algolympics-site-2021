@@ -11,7 +11,7 @@ function Subcomponent() {
 
 export default function Component() {
 	return (
-		<div class="footer">
+		<div class="footer incompressible">
 			<div class="wrapper">
 			</div>
 		</div>
