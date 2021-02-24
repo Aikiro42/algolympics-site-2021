@@ -1,16 +1,27 @@
 import React, {useState, useEffect} from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery } from "gatsby"
 
 import "./map.scss"
 
-function Subcomponent() {
-	return (
-		<p>I am a subcomponent</p>
+export default function Map() {
+	const data = useStaticQuery(
+		graphql`
+			query {
+				allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/location.md/"}}) {
+					edges {
+						node {
+							html
+						}
+					}
+				}
+			}
+		`
 	)
-}
 
-export default function Component() {
 	return (
-		<div></div>
+		<div id="map-section">
+			<h1>Location</h1>
+			<div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} />
+		</div>
 	)
 }

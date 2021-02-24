@@ -136,5 +136,20 @@
 			"staticLogoSrc": "/assets/img/sponsors/flexisourceIT/flexisourceit-color.png",
 			"sponsorLink": "https://flexisourceit.com.au/"
 		}
+	],
+	
+	"socials": [
+		{
+			"type": "facebook",
+			"link": "https://fb.com/upacm"
+		},
+		{
+			"type": "twitter",
+			"link": "https://twitter.com/upacm"
+		},
+		{
+			"type": "email",
+			"link": "algolympics@upacm.net"
+		}
 	]
 }
