@@ -16,7 +16,7 @@ function SocialItem({type, link}) {
 			break;
 		default:
 			social_logo="/placeholder-logo.png";
-			link_href = "";
+			link_href = "mailto:" + link + "?subject=Algolympics 2021";
 			break;
 	}
 	return (
