@@ -33,7 +33,7 @@ export default function Landing() {
 
 	return (
 		<>
-			<img id="landing-image" class={opaque ? "scrolled" : ""} src={indexData.landing.staticBgSrc} />
+			<img id="landing-image" class={opaque ? "scrolled incompressible" : "incompressible"} src={indexData.landing.staticBgSrc} />
 			<div id="landing-text" class="incompressible">
 				<div class="wrapper">
 					<img src={indexData.landing.bigAlgoLogoSrc} />

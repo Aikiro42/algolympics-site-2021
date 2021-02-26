@@ -7,7 +7,7 @@ import indexData from "../../json/index.json"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-function Banner({place, prize, winners}) {
+function Banner({place, prize, winner}) {
 	
 	var prize_heading = "";
 	var trophy_img_src = "";
@@ -43,6 +43,11 @@ function Banner({place, prize, winners}) {
 					<h2>{prize_heading}</h2>
 					<p>{prize}</p>
 				</div>
+				<h3>2020 Winner</h3>
+				<a class="winner" href={winner.link}>
+					<img class="winner-profile" src={winner.logoSrc} />
+					<span>{winner.name}</span>
+				</a>
 			</div>
 		</div>
 	)
@@ -51,9 +56,9 @@ function Banner({place, prize, winners}) {
 export default function Prizes() {
 	return (
 		<div id="prizes-section">
-			<Banner place="second" prize={indexData.prizes.second} winners={indexData.winners.second.slice(0, 5)} />
-			<Banner place="first" prize={indexData.prizes.first} winners={indexData.winners.first.slice(0, 5)} />
-			<Banner place="third" prize={indexData.prizes.third} winners={indexData.winners.third.slice(0, 5)} />
+			<Banner place="second" prize={indexData.prizes.second} winner={indexData.winners.second}/>
+			<Banner place="first" prize={indexData.prizes.first} winner={indexData.winners.first}/>
+			<Banner place="third" prize={indexData.prizes.third} winner={indexData.winners.third}/>
 		</div>
 	)
 }

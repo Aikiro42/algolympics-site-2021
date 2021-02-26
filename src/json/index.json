@@ -37,82 +37,38 @@
 	},
 	
 	"winners": {
-		"first" : [
-			{
-				"logoSrc": "https://cdn.discordapp.com/attachments/736428315736408068/812800285155000330/108862443_3363512483688174_2613543767902166127_n.png",
-				"name": "Team DOG",
-				"members": [
-					"Luis Alvarado",
-					"Ivan Castillo",
-					"Tom Binbinon"
-				],
-				"link": "https://codeforces.com"
-			},
-			{
-				"logoSrc": "https://cdn.discordapp.com/attachments/736428315736408068/812800285155000330/108862443_3363512483688174_2613543767902166127_n.png",
-				"name": "Team DOG",
-				"members": [
-					"Luis Alvarado",
-					"Ivan Castillo",
-					"Tom Binbinon"
-				],
-				"link": "https://codeforces.com"
-			},
-			{
-				"logoSrc": "https://cdn.discordapp.com/attachments/736428315736408068/812800285155000330/108862443_3363512483688174_2613543767902166127_n.png",
-				"name": "Team DOG",
-				"members": [
-					"Luis Alvarado",
-					"Ivan Castillo",
-					"Tom Binbinon"
-				],
-				"link": "https://codeforces.com"
-			},
-			{
-				"logoSrc": "https://cdn.discordapp.com/attachments/736428315736408068/812800285155000330/108862443_3363512483688174_2613543767902166127_n.png",
-				"name": "Team DOG",
-				"members": [
-					"Luis Alvarado",
-					"Ivan Castillo",
-					"Tom Binbinon"
-				],
-				"link": "https://codeforces.com"
-			},
-			{
-				"logoSrc": "https://cdn.discordapp.com/attachments/736428315736408068/812800285155000330/108862443_3363512483688174_2613543767902166127_n.png",
-				"name": "Team DOG",
-				"members": [
-					"Luis Alvarado",
-					"Ivan Castillo",
-					"Tom Binbinon"
-				],
-				"link": "https://codeforces.com"
-			}
-		],
-		"second" : [
-			{
-				"logoSrc": "",
-				"name": "Team ANG",
+		"first" : {
+		
+			"logoSrc": "/assets/img/winners/bruh.png",
+			"name": "Team bruh",
+			"members": [
+				"Luis Alvarado",
+				"Ivan Castillo",
+				"Tom Binbinon"
+			],
+			"link": "https://codeforces.com"
+		
+		},
+		"second" : {
+				"logoSrc": "/assets/img/winners/blossom.png",
+				"name": "Team Blossom",
 				"members": [
 					"Luis Alvarado",
 					"Leandro Paat",
 					"Joana Biado"
 				],
 				"link": "https://codeforces.com"
-			}
-		],
-		"third" : [
-			{
-				"logoSrc": "",
-				"name": "Team 7",
+		},
+		"third" : {
+				"logoSrc": "/assets/img/winners/dai-gurren.png",
+				"name": "Team Dai-Gurren",
 				"members": [
 					"Uzumaki Naruto",
 					"Haruno Sakura",
 					"Uchiha Sasuke"
 				],
 				"link": "https://codeforces.com"
-			}
-		]
+		}
 	},
 
 	"sponsors" : [
