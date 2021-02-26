@@ -155,5 +155,62 @@
 			"type": "email",
 			"link": "algolympics@upacm.net"
 		}
-	]
+	],
+
+	"probsets": {
+		"samples": [
+			{
+				"name": "Santa's List",
+				"link": "/probsets/sample/algolympics-sample-problem-01.pdf",
+				"background": "/probsets/sample/sample-bg.png"
+			},
+			{
+				"name": "Make an Entrance",
+				"link": "/probsets/sample/algolympics-sample-problem-02.pdf",
+				"background": "/probsets/sample/sample-bg.png"
+			},
+			{
+				"name": "Incomplete Model Kits",
+				"link": "/probsets/sample/algolympics-sample-problem-03.pdf",
+				"background": "/probsets/sample/sample-bg.png"
+			}
+		],
+		"previous": [
+			{
+				"year": "2020",
+				"problems": "algolympics-2020-problems.pdf",
+				"solutions": "algolympics-2020-solutions.pdf",
+				"solutionSketches": "algolympics-2020-solution-sketches.pdf",
+				"codeSolutions": "algolympics-2020-code-solutions.zip"
+			},
+			{
+				"year": "2019",
+				"problems": "algolympics-2019-problems.pdf",
+				"solutions": "",
+				"solutionSketches": "algolympics-2019-solution-sketches.pdf",
+				"codeSolutions": ""
+			},
+			{
+				"year": "2018",
+				"problems": "algolympics-2018-problems.pdf",
+				"solutions": "",
+				"solutionSketches": "algolympics-2018-solution-sketches.pdf",
+				"codeSolutions": ""
+			},
+			{
+				"year": "2017",
+				"problems": "algolympics-2017-problems.pdf",
+				"solutions": "",
+				"solutionSketches": "algolympics-2017-solution-sketches.pdf",
+				"codeSolutions": ""
+			},
+			{
+				"year": "2016",
+				"problems": "algolympics-2016-problems.pdf",
+				"solutions": "",
+				"solutionSketches": "algolympics-2016-solution-sketches.pdf",
+				"codeSolutions": ""
+			}
+		]
+	}
 }
