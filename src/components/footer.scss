@@ -1,7 +1,7 @@
 @import "../styles/var.scss";
 
 div.footer{
-	background: rgba(25,25,25,1);
+	background: $acm-black;
 	color: white;
 	div.top{
 		padding: 3vh 0;
@@ -14,6 +14,7 @@ div.footer{
 				flex-direction: column;
 				align-items: flex-start;
 				justify-content: flex-start;
+				align-content: flex-start;
 				
 				> *{
 					padding: 3%;
@@ -23,6 +24,43 @@ div.footer{
 					min-height: calc(500px * 0.05);
 					max-height: calc(600px * 0.05);
 					height: 5vh;
+				}
+			}
+
+			div.other-links.section{
+				flex-direction: row;
+				flex-wrap: wrap;
+				h2{
+					width: 100%;
+				}
+				a.other-link{
+					display: flex;
+					align-items: center;
+					width: 40%;
+					border-left: $hidden-border;
+					transition: 0.2s;
+				}
+				a.other-link:nth-child(odd){
+					border-right: $hidden-border;
+					border-left: 0;
+				}
+				a.other-link:hover{
+					background: $link-hover-bg-left;
+					border-left: $link-hover-border;
+				}
+				a.other-link:nth-child(odd):hover{
+					background: $link-hover-bg-right;
+					border-left: 0;
+					border-right: $link-hover-border;
+				}
+				a.other-link:active{
+					background: $link-active-bg-left;
+					border-left: $link-active-border;
+				}
+				a.other-link:nth-child(odd):active{
+					background: $link-active-bg-right;
+					border-left: 0;
+					border-right: $link-active-border;
 				}
 			}
 
@@ -81,6 +119,9 @@ div.footer{
 	div.bottom{
 		height: 100px;
 		border-top: 3px solid gray;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
 

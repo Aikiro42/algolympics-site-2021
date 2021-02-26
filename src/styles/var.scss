@@ -5,6 +5,7 @@
 
 $universal-gray: rgb(25,25,25);
 $universal-light-gray: #888;
+$acm-black: rgb(25,25,25);
 $acm-orange: #fc9200;
 $acm-red: rgb(253, 27, 0);
 $acm-yellow: #ffd600;
@@ -18,8 +19,14 @@ $acm-silver-dark: rgb(100,100,100);
 $acm-bronze: $acm-orange;
 $acm-bronze-dark: #915400;
 
+$hidden-border: 1px solid rgba(0,0,0,0);
+
 $link-hover-bg: linear-gradient(0deg, rgba(255,255,255,0.125) 0%, rgba(255,255,255,0) 100%);
+$link-hover-bg-left: linear-gradient(90deg, rgba(255,255,255,0.125) 0%, rgba(255,255,255,0) 100%);
+$link-hover-bg-right: linear-gradient(270deg, rgba(255,255,255,0.125) 0%, rgba(255,255,255,0) 100%);
 $link-hover-border: 1px solid white;
 $link-active-bg: linear-gradient(0deg, rgba(1,130,172,0.125) 0%, rgba(255,255,255,0) 100%);
+$link-active-bg-left: linear-gradient(90deg, rgba(1,130,172,0.125) 0%, rgba(255,255,255,0) 100%);
+$link-active-bg-right: linear-gradient(270deg, rgba(1,130,172,0.125) 0%, rgba(255,255,255,0) 100%);
 $link-active-border: 1px solid #0182ac;
 

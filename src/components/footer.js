@@ -44,8 +44,6 @@ export default function Footer() {
 		<div class="footer incompressible">
 			<div class="top">
 				<div class="wrapper">
-					<div class="other-links section">
-					</div>
 					<div class="socials section">
 						<h2>Contact us</h2>
 						{indexData.socials.map((social) => {
@@ -53,6 +51,12 @@ export default function Footer() {
 								<Social type={social.type} link={social.link} />
 							)
 						})}
+					</div>
+					<div class="other-links section">
+						<h2>UPACM</h2>
+						<a class="other-link" href="https://upacm.net">Website</a>
+						<a class="other-link" href="https://upacm.net">Automaton</a>
+						<a class="other-link" href="https://upacm.net">Privacy Policy</a>
 					</div>
 					<div class="sponsors section">
 						<h2>Our Sponsors</h2>
@@ -66,7 +70,7 @@ export default function Footer() {
 				</div>
 			</div>
 			<div class="bottom">
-					<span class="copyright"></span>
+					<span class="copyright">© 2019 Association for Computing Machinery - University of the Philippines Diliman Student Chapter, Inc.</span>
 			</div>
 		</div>
 	)

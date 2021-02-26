@@ -10,7 +10,7 @@ div.header{
 	width: 100%;
 	z-index: 9;
 	height: $header-height;
-	background: black;
+	background: $acm-black;
 	color: white;
 	transition: 0.2s;
 	box-shadow: 0 0 25px 0 black;
@@ -62,10 +62,10 @@ div.header{
 				display: flex;
 				align-items: center;
 				justify-content: space-around;
-			
+
 				span.navlink{
 					//background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
-					border-bottom: 1px solid rgba(0,0,0,0);
+					border-bottom: $hidden-border;
 					margin-bottom: -1px;
 					display: block;
 					padding: 1vh 1vw;
@@ -156,14 +156,13 @@ div.header.top{
 				
 				div.navlinks{
 				
-					
 					transform: translateX(100%);
 					flex-direction: column;
 					align-items: stretch;
 					transition: 0.2s;
 					span.navlink{
 						width: 100%;
-						background: black;
+						background: $acm-black;
 						text-align: right;
 						border-bottom: 0;
 						justify-content: center;
