@@ -9,6 +9,18 @@ import AlgoYear from "./algo-year.js"
 import "./header.scss"
 
 function Navlink({linkName, href}) {
+	if(linkName == "LIVE"){
+		return(
+			<Link to={href}>
+				<span class="navlink" id="live">
+					<span class="red">L</span>
+					<span class="yellow">I</span>
+					<span class="green">V</span>
+					<span class="blue">E</span>
+				</span>
+			</Link>
+		)
+	}
 	return (
 		<Link to={href}>
 			<span class="navlink">
@@ -47,6 +59,7 @@ export default function Header({isIndex}) {
 					<div class="navbar">
 						<img class="hamburger-icon" src={hamburgerImg} onClick={() => setNavbarVisible(!navbarVisible)}/>
 						<div class={navbarVisible ? "navlinks visible" : "navlinks"}>
+							<Navlink linkName="LIVE" href="/live/" />
 							<Navlink linkName="Mechanics" href="/mechanics/" />
 							<Navlink linkName="Prizes" href="/#prizes-section" />
 							<Navlink linkName="Sponsors" href="/#sponsors-section" />

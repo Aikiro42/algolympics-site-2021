@@ -61,7 +61,6 @@ export default function Footer() {
 					<div class="sponsors section">
 						<h2>Our Sponsors</h2>
 						{indexData.sponsors.map((sponsor) => {
-							console.log(sponsor);
 							return(
 								<Sponsor link={sponsor.sponsorLink} logoSrc={sponsor.staticLogoSrcAlt} />
 							)

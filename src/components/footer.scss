@@ -136,16 +136,23 @@ div.footer{
 				div.section{
 					width: 90%;
 					align-items: center;
+					h2{
+						text-align: center;
+						margin-top: 4vh;
+					}
 					a{
 						justify-content: center;
 					}
 				}
 
-				div.section.sponsors{
-					h2{
-						text-align: center;
-						margin-top: 4vh;
+				div.other-links.section{
+					flex-direction: column;
+					a.other-link{
+						width: 100%;
 					}
+				}
+
+				div.section.sponsors{
 					a.sponsor{
 						img{
 							object-position: center center;
@@ -154,6 +161,12 @@ div.footer{
 				}
 
 			}
+		}
+		div.bottom{
+			display: flex;
+			justify-content: center;
+			font-size: 0.75em;
+			text-align: center;
 		}
 	}
 }
