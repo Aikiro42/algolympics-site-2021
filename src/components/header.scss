@@ -38,6 +38,10 @@ div.header{
 			h1{
 				padding: 0 1vw;
 				font-size: 1.5em;
+				span{
+					font-family: "Montserrat";
+					font-weight: bold;
+				}
 			}
 		}
 		
@@ -96,8 +100,16 @@ div#header-spacer{
 div.header.top{
 	background: rgba(0,0,0,0.25);
 	height: $header-top-height;
-	div.title{
-		margin-left: $header-top-height*0.15;
+	div.wrapper{
+		a{
+			div.title{
+				margin-left: $header-top-height*0.15;
+				border-radius: 5%;
+				h1{
+					display: none;
+				}
+			}
+		}
 	}
 }
 

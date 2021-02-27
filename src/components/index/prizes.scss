@@ -53,24 +53,41 @@ div#prizes-section{
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+
 				img.winner-profile{
-					margin-top: 10%;
-					width: 25vh;
-					height: 25vh;
+					width: 100%;
+					filter: grayscale(100%);
+					transition: 0.2s;
+					border-radius: 10px;
+				}
+
+				img.team-logo{
+					margin-top: -5vh;
+					width: 10vh;
+					height: 10vh;
 					background: rgba(255,255,255,0.25);
 					object-fit: contain;
 					border-radius: 12.5vh;
 					filter: grayscale(100%);
 					transition: 0.2s;
 				}
-				span{
-					font-size: 1.25em;
-					width: 60%;
+				span.team-name{
+					font-size: 1.0625em;
+					width: 100%;
 					text-align: center;
+					border-bottom: 1px solid white;
+					padding-bottom: 3%;
+				}
+				span.team-univ{
+					margin-top: 3%;
+					font-size: 0.8em;
 				}
 			}
 			a.winner:hover{
 				img.winner-profile{
+					filter: grayscale(0%);
+				}
+				img.team-logo{
 					filter: grayscale(0%);
 				}
 			}
@@ -130,6 +147,16 @@ div#prizes-section{
 						border-radius: 0;
 						width: 100%;
 						object-fit: cover;
+						display: none;
+					}
+					img.team-logo{
+						width: 15vw;
+						height: 15vw;
+						margin-top: 3%;
+						border-radius: 7.5vw;
+					}
+					span.team-univ{
+						font-size: 1em;
 					}
 				}
 			}

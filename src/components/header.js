@@ -41,7 +41,7 @@ export default function Header({isIndex}) {
 					<Link to="/">
 					<div class="title">
 						<img src={headerImg} />
-						<h1>Algolympics <AlgoYear /></h1>
+						<h1><span class="red">ALGO</span><span class="yellow">LYM</span><span class="green">PICS</span> <span class="blue">2021</span></h1>
 					</div>
 					</Link>
 					<div class="navbar">

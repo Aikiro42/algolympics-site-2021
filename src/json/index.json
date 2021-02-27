@@ -1,6 +1,8 @@
 {
 	"heading": "",
 	
+	"event-deadline": "2021-03-20",
+
 	"landing": {
 		"year": "2021",
 		"algoTheme": "Let your code shine",
@@ -39,8 +41,10 @@
 	"winners": {
 		"first" : {
 		
-			"logoSrc": "/assets/img/winners/bruh.png",
+			"logoSrc": "/assets/img/logo/admu.png",
+			"profileSrc": "/assets/img/winners/bruh-group-photo.png",
 			"name": "Team bruh",
+			"university": "Ateneo De Manila University",
 			"members": [
 				"Luis Alvarado",
 				"Ivan Castillo",
@@ -50,22 +54,26 @@
 		
 		},
 		"second" : {
-				"logoSrc": "/assets/img/winners/blossom.png",
+			"logoSrc": "/assets/img/logo/upd.png",
+			"profileSrc": "/assets/img/winners/dai-gurren-group-photo.png",
+			"name": "Team Dai-Gurren",
+			"university": "University of the Philippines - Diliman Campus",
+			"members": [
+				"Uzumaki Naruto",
+				"Haruno Sakura",
+				"Uchiha Sasuke"
+			],
+			"link": "https://codeforces.com"
+		},
+		"third" : {
+				"logoSrc": "/assets/img/logo/admu.png",
+				"profileSrc": "/assets/img/winners/blossom-group-photo.png",
 				"name": "Team Blossom",
+				"university": "Ateneo De Manila University",
 				"members": [
 					"Luis Alvarado",
 					"Leandro Paat",
 					"Joana Biado"
-				],
-				"link": "https://codeforces.com"
-		},
-		"third" : {
-				"logoSrc": "/assets/img/winners/dai-gurren.png",
-				"name": "Team Dai-Gurren",
-				"members": [
-					"Uzumaki Naruto",
-					"Haruno Sakura",
-					"Uchiha Sasuke"
 				],
 				"link": "https://codeforces.com"
 		}
