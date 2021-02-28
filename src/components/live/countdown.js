@@ -12,10 +12,19 @@ const calculateTimeLeft = () => {
 		if(formatted_seconds.length < 2){
 			formatted_seconds = "0" + formatted_seconds;
 		}
+		let formatted_minutes = String(Math.floor((difference / 1000 / 60) % 60));
+		if(formatted_minutes.length < 2){
+			formatted_minutes = "0" + formatted_minutes;
+		}
+		let formatted_hours = String(Math.floor((difference / (1000 * 60 * 60)) % 24));
+		if(formatted_hours.length < 2){
+			formatted_hours = "0" + formatted_hours;
+		}
+		
 		timeLeft = {
 			days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-			hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-			minutes: Math.floor((difference / 1000 / 60) % 60),
+			hours: formatted_hours,
+			minutes: formatted_minutes,
 			seconds: formatted_seconds
 		};
 	}
