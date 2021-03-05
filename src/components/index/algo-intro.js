@@ -28,7 +28,7 @@ export default function Component() {
 		`
 	)
 	return (
-		<div id="algo-intro-section">
+		<div id="algo-intro-section" class="index-section">
 			<img id="intro-image" src={indexData.intro.staticImageSrc} />
 			<div id="intro-text">
 				<div class="title-container">

@@ -3,6 +3,9 @@ title: "Mechanics"
 ---
 # Eligibility of Participants
 
+<br />
+<hr />
+
 A single proper team consists of two (2) to three (3) team members, each of which is an **_undergraduate_** student from a degree program at the sponsoring institution and is officially enrolled at the time of the contest. Alternates **WILL NOT** be allowed.
 
 The contestants must be Filipino citizens, or officially enrolled at a sponsoring institution in the Philippines at the time of the contest.

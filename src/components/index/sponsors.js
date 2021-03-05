@@ -15,7 +15,7 @@ function Sponsor({staticLogoSrc, sponsorLink}){
 
 export default function Sponsors() {
 	return (
-		<div id="sponsors-section">
+		<div id="sponsors-section" class="index-section">
 			<h1>Our Sponsors</h1>
 			<div id="sponsors-container">
 			{indexData.sponsors.map((sponsor) => {

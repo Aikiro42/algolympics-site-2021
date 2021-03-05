@@ -44,7 +44,7 @@ export default function Countdown() {
 
 	return (
 		<div id="countdown-section">
-			<h1 id="label">Algolympics Finals Deadline</h1>
+			<h1 id="label">Algolympics Finals</h1>
 			<h1 id="timer">
 				<span id="days" class="red">{timeLeft.days}<span class="label">D</span></span>
 				<span id="days" class="yellow">{timeLeft.hours}<span class="label">H</span></span>

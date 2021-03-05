@@ -51,7 +51,7 @@ function Number({value, desc, iconSrc, isSpecial}) {
 
 export default function Numbers() {
 	return (
-		<div id="numbers-section">
+		<div id="numbers-section" class="index-section">
 			{indexData.numbers.map((number) => (
 				<Number iconSrc={number.staticIconSrc} value={number.value} desc={number.description} />
 			))}

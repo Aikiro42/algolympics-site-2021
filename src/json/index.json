@@ -43,7 +43,7 @@
 		
 			"logoSrc": "/assets/img/logo/admu.png",
 			"profileSrc": "/assets/img/winners/bruh-group-photo.png",
-			"name": "Team bruh",
+			"name": "bruh",
 			"university": "Ateneo De Manila University",
 			"members": [
 				"Luis Alvarado",
@@ -56,7 +56,7 @@
 		"second" : {
 			"logoSrc": "/assets/img/logo/upd.png",
 			"profileSrc": "/assets/img/winners/dai-gurren-group-photo.png",
-			"name": "Team Dai-Gurren",
+			"name": "Dai-Gurren",
 			"university": "University of the Philippines - Diliman Campus",
 			"members": [
 				"Uzumaki Naruto",
@@ -68,7 +68,7 @@
 		"third" : {
 				"logoSrc": "/assets/img/logo/admu.png",
 				"profileSrc": "/assets/img/winners/blossom-group-photo.png",
-				"name": "Team Blossom",
+				"name": "Blossom",
 				"university": "Ateneo De Manila University",
 				"members": [
 					"Luis Alvarado",

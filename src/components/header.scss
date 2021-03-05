@@ -72,7 +72,6 @@ div.header{
 					display: flex;
 					align-items: center;
 					span.navlink{
-						//background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
 						border-bottom: $hidden-border;
 						font-weight: bold;
 						margin-bottom: -1px;
@@ -203,9 +202,10 @@ div.header.top{
 				
 				img.hamburger-icon{
 					display: block;
-					width: $m-header-height*0.7;
-					height: $m-header-height*0.7;
-					padding: $m-header-height*0.15;
+					$hamburger-size-dimension-ratio: 0.4;
+					width: $m-header-height * $hamburger-size-dimension-ratio;
+					height: $m-header-height * $hamburger-size-dimension-ratio;
+					padding: $m-header-height*((1 - $hamburger-size-dimension-ratio) / 2);
 					align-self: flex-end;
 				}
 				
@@ -261,6 +261,11 @@ div.header.top{
 	div.header.top{
 		height: $m-header-height;
 		div.wrapper{
+			a{
+				div.title{
+					margin-left: 0;
+				}
+			}
 			div.navbar{
 				div.navlinks{
 					a#live{
