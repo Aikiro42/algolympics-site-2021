@@ -1,7 +1,7 @@
 @import "../../styles/var.scss";
 
 div#mechanics-layout{
-	color: white;
+	color: $dull-white;
 	width: 80%;
 	padding: 5%;
 	margin: auto;
@@ -10,21 +10,27 @@ div#mechanics-layout{
 		font-size: 4em;
 		text-align: center;
 		padding: 1.5%;
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid $dull-white;
 		margin-bottom: 2%;
 	}
 	
 	p{
 		margin: 3% 0;
+		text-align: justify;
+		line-height: 2em;
+	}
+
+	hr{
+		border: 1px solid rgb(100,100,100);
 	}
 	
 	a{
-		color: $acm-orange;
+		color: $acm-dull-orange;
 		text-decoration: underline;
 	}
 	
 	strong{
-		color: $acm-red;
+		color: $acm-dull-red;
 	}
 	
 	li{

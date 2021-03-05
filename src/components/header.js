@@ -11,14 +11,20 @@ import "./header.scss"
 function Navlink({linkName, href}) {
 	if(linkName == "LIVE"){
 		return(
-			<Link to={href}>
+			<Link to={href} id="live">
 				<span class="navlink" id="live">
-					<span class="red">L</span>
-					<span class="yellow">I</span>
-					<span class="green">V</span>
-					<span class="blue">E</span>
+					LIVE
 				</span>
 			</Link>
+		)
+	}
+	if(linkName == "UP ACM"){
+		return(
+			<a href={href}>
+				<span class="navlink">
+					{linkName}
+				</span>
+			</a>
 		)
 	}
 	return (
@@ -61,11 +67,9 @@ export default function Header({isIndex}) {
 						<div class={navbarVisible ? "navlinks visible" : "navlinks"}>
 							<Navlink linkName="LIVE" href="/live/" />
 							<Navlink linkName="Mechanics" href="/mechanics/" />
-							<Navlink linkName="Prizes" href="/#prizes-section" />
-							<Navlink linkName="Sponsors" href="/#sponsors-section" />
 							<Navlink linkName="Probsets" href="/probsets/" />
 							<Navlink linkName="FAQ" href="/faq/" />
-							<Navlink linkName="Contact" href="/contact/" />
+							<Navlink linkName="UP ACM" href="http://upacm.net" />
 						</div>
 					</div>
 				</div>

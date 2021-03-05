@@ -2,7 +2,8 @@
 
 div.footer{
 	background: $acm-black;
-	color: white;
+	color: $dull-white;
+	box-shadow: 0 0 25px 0 black;
 	div.top{
 		padding: 3vh 0;
 		div.wrapper{
@@ -18,6 +19,10 @@ div.footer{
 				
 				> *{
 					padding: 3%;
+				}
+
+				h2{
+					font-family: "Montserrat";
 				}
 
 				a{
@@ -64,6 +69,38 @@ div.footer{
 				}
 			}
 
+			div.contacts.section{
+				a.contact, div.contact{
+					height: 5vh;
+					display: flex;
+					align-items: center;
+					transition: 0.2s;
+					border-left: 1px solid rgba(0,0,0,0);
+					font-size: 0.8em;
+					img{
+						width: 10%;
+						height: 100%;
+						object-fit: contain;
+						margin-right: 3%;
+					}
+				}
+
+				a.contact{
+					cursor: pointer;
+				}
+
+				a.contact:hover{
+					border-left: 1px solid $dull-white;
+					background: linear-gradient(90deg, rgba(200,200,200,0.125) 0%, rgba(200,200,200,0) 100%);
+				}
+
+				a.contact:active{
+					border-left: 1px solid $acm-dull-blue;
+					background: linear-gradient(90deg, rgba(1,130,172,0.125) 0%, rgba(200,200,200,0) 100%);
+				}
+
+			}
+
 			div.socials.section{
 				a.social{
 					height: 5vh;
@@ -80,38 +117,13 @@ div.footer{
 				}
 
 				a.social:hover{
-					border-left: 1px solid white;
-					background: linear-gradient(90deg, rgba(255,255,255,0.125) 0%, rgba(255,255,255,0) 100%);
+					border-left: 1px solid $dull-white;
+					background: linear-gradient(90deg, rgba(200,200,200,0.125) 0%, rgba(200,200,200,0) 100%);
 				}
 
 				a.social:active{
-					border-left: 1px solid $acm-blue;
-					background: linear-gradient(90deg, rgba(1,130,172,0.125) 0%, rgba(255,255,255,0) 100%);
-				}
-			}
-			div.sponsors.section{
-				h2{
-					width: 94%;
-				}
-				a.sponsor{
-					height: 5vh;
-					width: calc(94% - 1px);
-					border-left: 1px solid rgba(0,0,0,0);
-					img{
-						width: 100%;
-						height: 100%;
-						object-fit: contain;
-						object-position: 0% 0%;
-					}
-				}
-				a.sponsor:hover{
-					border-left: 1px solid white;
-					background: linear-gradient(90deg, rgba(255,255,255,0.125) 0%, rgba(255,255,255,0) 100%);
-				}
-
-				a.sponsor:active{
-					border-left: 1px solid $acm-blue;
-					background: linear-gradient(90deg, rgba(1,130,172,0.125) 0%, rgba(255,255,255,0) 100%);
+					border-left: 1px solid $acm-dull-blue;
+					background: linear-gradient(90deg, rgba(1,130,172,0.125) 0%, rgba(200,200,200,0) 100%);
 				}
 			}
 		}
@@ -140,7 +152,7 @@ div.footer{
 						text-align: center;
 						margin-top: 4vh;
 					}
-					a{
+					a, div{
 						justify-content: center;
 					}
 				}
@@ -152,14 +164,13 @@ div.footer{
 					}
 				}
 
-				div.section.sponsors{
-					a.sponsor{
-						img{
-							object-position: center center;
-						}
+				div.contacts.section{
+					flex-direction: column;
+					a.contact, div.contact{
+						width: 100%;
+						align-items: center;
 					}
 				}
-
 			}
 		}
 		div.bottom{

@@ -31,12 +31,52 @@ function Social({type, link}){
 	)
 }
 
-function Sponsor({logoSrc, link}) {
-	return (
-		<a class="sponsor" href={link}>
-			<img src={logoSrc} />
-		</a>
-	)
+function Contact({type, name, link}) {
+	var contact_logo = "";
+	var link_href = link;
+	var link_type = ""
+	switch(type){
+		case "facebook":
+			contact_logo = "/assets/img/social/facebook-logo.png";
+			link_type = "Facebook";
+			break;
+		case "twitter":
+			contact_logo="/assets/img/social/twitter-logo.png";
+			link_type = "Twitter";
+			break;
+		case "email":
+			contact_logo="/assets/img/social/email-logo.png";
+			link_type = "Email";
+			break;
+		case "location":
+			contact_logo="/assets/img/social/location-logo.png";
+			link_type = "Location";
+			break;
+		case "mobile":
+			contact_logo="/assets/img/social/mobile-logo.png";
+			link_type = "Mobile";
+			break;
+		default:
+			contact_logo="/placeholder-logo.png";
+			link_href = "";
+			return <></>;
+			break;
+	}
+	if(link != "#"){
+		return (
+			<a class="contact" href={link}>
+				<img src={contact_logo} />
+				{name}
+			</a>
+		)
+	}else{
+		return (
+			<div class="contact">
+				<img src={contact_logo} />
+				{name}
+			</div>
+		)
+	}
 }
 
 export default function Footer() {
@@ -44,25 +84,25 @@ export default function Footer() {
 		<div class="footer incompressible">
 			<div class="top">
 				<div class="wrapper">
-					<div class="socials section">
-						<h2>Contact us</h2>
-						{indexData.socials.map((social) => {
-							return(
-								<Social type={social.type} link={social.link} />
-							)
-						})}
-					</div>
 					<div class="other-links section">
 						<h2>UPACM</h2>
 						<a class="other-link" href="https://upacm.net">Website</a>
 						<a class="other-link" href="https://upacm.net">Automaton</a>
 						<a class="other-link" href="https://upacm.net">Privacy Policy</a>
 					</div>
-					<div class="sponsors section">
-						<h2>Our Sponsors</h2>
-						{indexData.sponsors.map((sponsor) => {
+					<div class="contacts section">
+						<h2>Contact Us</h2>
+						{indexData.contacts.map((contact) => {
 							return(
-								<Sponsor link={sponsor.sponsorLink} logoSrc={sponsor.staticLogoSrcAlt} />
+								<Contact link={contact.link} name={contact.name} type={contact.type} />
+							)
+						})}
+					</div>
+					<div class="socials section">
+						<h2>Connect with us!</h2>
+						{indexData.socials.map((social) => {
+							return(
+								<Social type={social.type} link={social.link} />
 							)
 						})}
 					</div>

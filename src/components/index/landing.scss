@@ -29,10 +29,11 @@ div#landing-text{
 	align-items: center;
 	justify-content: center;
 	div.wrapper{
-		height: 50%;
-		max-height: calc(1080px / 2);
+		height: 100%;
+		width: 100%;
+		max-height: calc(1080px);
 		display: flex;
-		width: 80%;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 
@@ -45,9 +46,9 @@ div#landing-text{
 		}
 
 		img{
-			height: 70%;
-			padding-right: 3vw;
+			width: 20;
 			object-fit: contain;
+			padding-bottom: 2vh;
 		}
 		
 	}
@@ -68,8 +69,6 @@ div#landing-spacer{
 			img{
 				width: 60vw;
 				height: auto;
-				padding-right: 0;
-				padding-bottom: 2vh;
 			}
 
 			h1{

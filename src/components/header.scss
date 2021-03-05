@@ -11,7 +11,7 @@ div.header{
 	z-index: 9;
 	height: $header-height;
 	background: $acm-black;
-	color: white;
+	color: $dull-white;
 	transition: 0.2s;
 	box-shadow: 0 0 25px 0 black;
 	div.wrapper{
@@ -66,26 +66,54 @@ div.header{
 				display: flex;
 				align-items: center;
 				justify-content: space-around;
-
-				span.navlink{
-					//background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
-					border-bottom: $hidden-border;
-					margin-bottom: -1px;
-					display: block;
-					padding: 1vh 1vw;
+				height: 100%;
+				a{
+					height: 100%;
 					display: flex;
 					align-items: center;
-					transition: 0.2s;
-				}
-				
-				span.navlink:hover{
-					background: $link-hover-bg;
-					border-bottom: $link-hover-border;
-				}
-				
-				span.navlink:active{
-					background: $link-active-bg;
-					border-bottom: $link-active-border;
+					span.navlink{
+						//background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+						border-bottom: $hidden-border;
+						font-weight: bold;
+						margin-bottom: -1px;
+						padding: 1vh 1vw;
+						display: flex;
+						align-items: center;
+						transition: 0.2s;
+					}
+
+					span.navlink#live{
+						background: #303030;
+						padding: 0 0;
+						height: 100%;
+						width: $header-height;
+						display: flex;
+						justify-content: center;
+						border-bottom: none;
+						margin-bottom: 0;
+						align-self: stretch;
+						border-left: 1px solid $acm-dull-blue;
+						border-right: 1px solid $acm-dull-blue;
+						margin-right: calc(1vw - 1px);
+					}
+
+					span.navlink#live:hover{
+						background: #134d78;
+					}
+					span.navlink#live:active{
+						background: #173462;
+					}
+					
+					
+					span.navlink:hover{
+						background: $link-hover-bg;
+						border-bottom: $link-hover-border;
+					}
+					
+					span.navlink:active{
+						background: $link-active-bg;
+						border-bottom: $link-active-border;
+					}
 				}
 			}
 			
@@ -107,6 +135,21 @@ div.header.top{
 				border-radius: 5%;
 				h1{
 					display: none;
+				}
+			}
+		}
+		div.navbar{
+			div.navlinks{
+				a#live{
+					span.navlink#live{
+						background: rgba(48,48,48,0.25);
+					}
+					span.navlink#live:hover{
+						background: #134d78;
+					}
+					span.navlink#live:active{
+						background: #173462;
+					}
 				}
 			}
 		}
@@ -167,25 +210,37 @@ div.header.top{
 				}
 				
 				div.navlinks{
-				
+					height: auto;
 					transform: translateX(100%);
 					flex-direction: column;
 					align-items: stretch;
 					transition: 0.2s;
-					span.navlink{
-						width: 100%;
-						background: $acm-black;
-						text-align: right;
-						border-bottom: 0;
-						justify-content: center;
-						padding: 2vh 0	;
-					}
-					
-					span.navlink:hover{
-						background: rgb(31,31,31);
-					}
-					span.navlink:active{
-						background: rgb(252*0.125,146*0.125,0);
+					a{
+						span.navlink{
+							width: 100%;
+							background: $acm-black;
+							text-align: right;
+							border-bottom: 0;
+							justify-content: center;
+							padding: 2vh 0;
+						}
+						span.navlink#live{
+							width: 100%;
+							height: auto;
+							text-align: right;
+							border-bottom: 0;
+							justify-content: center;
+							padding: 2vh 0;
+							margin-right: 0;
+							background: $acm-dull-blue;
+						}
+						
+						span.navlink:hover{
+							background: rgb(31,31,31);
+						}
+						span.navlink:active{
+							background: rgb(252*0.125,146*0.125,0);
+						}
 					}
 				}
 				
@@ -205,5 +260,16 @@ div.header.top{
 	
 	div.header.top{
 		height: $m-header-height;
+		div.wrapper{
+			div.navbar{
+				div.navlinks{
+					a#live{
+						span#live.navlink{
+							background: $acm-dull-blue;
+						}
+					}
+				}
+			}
+		}
 	}
 }

@@ -11,6 +11,9 @@ Contestants will be required to present a valid school ID on the On-Site Final R
 
 # Registration
 
+<br />
+<hr />
+
 Teams must register through the [provided registration form](https://bit.ly/Algolympics2020Registration). Only 1 member of the team needs to submit the registration for the entire team.
 
 **Ensure that you have access to the email(s) you provide** and that they are regularly checked, as further instructions for the Online Elimination Round as well as the On-Site Final Round will be communicated through the email provided.
@@ -29,12 +32,18 @@ There is no limit to the number of teams that may register per school, but the n
 
 # Contest Structure
 
+<br />
+<hr />
+
 The competition will be split into two rounds:
 1. The Online Elimination Round
 2. The On-Site Final Round
 Problem statements will be written in English and English only. Communication with judges (clarifications, etc.) will also be in English.
 
 # Online Elimination Round
+
+<br />
+<hr />
 
 Prior to the event, an Online Elimination Round will be held online on Codeforces. The Online Elimination Round will consist of at least ten (10) problems and will be open for eleven (11) days with the expectation that the contestants will solve the tasks during their free time.
 
@@ -45,6 +54,9 @@ All programming languages supported by Codeforces is allowed for the Online Elim
 The team must use the same Codeforces team name and Codeforces account submitted to the Algolympics Team.
 
 # Invitation to the On-Site Final Round
+
+<br />
+<hr />
 
 The teams that:
 
@@ -66,11 +78,17 @@ The organizers will accommodate a maximum of twenty (20) teams for the contest.
 
 # On-Site Final Round
 
+<br />
+<hr />
+
 The On-Site Final Round will be held in Accenture Ideas Exchange Room, Department of Computer Science, University of the Philippines Diliman, Quezon City.
 
 Each team is required to pay a registration fee amounting to Php 600 to be paid before the On-Site Final Round.
 
 # Contest Environment
+
+<br />
+<hr />
 
 The programming languages for the On-Site Final Round will be restricted to the following languages:
 
@@ -112,9 +130,15 @@ No hardware substitutions will be allowed (that is, teams may not bring their ow
 
 # Practice Session
 
+<br />
+<hr />
+
 Prior to the contest proper, a practice session will be held for one (1) hour, in order for the contestants to be familiar with the contest environment, as well as to address any technical or logistical issues that might arise.
 
 # On-Site Finals Contest Proper
+
+<br />
+<hr />
 
 The contest will have at least eight (8) problems to be solved in the allotted time of five hours. The length of the contest may be altered in the event of unforeseen consequences. Should the contest duration be altered, every attempt will be made to notify contestants in a timely and uniform manner.
 
@@ -136,6 +160,9 @@ If the clarification is deemed valid, the judges will send clarification reports
 
 # Scoring
 
+<br />
+<hr />
+
 Teams are ranked according to the number of problems solved. Teams with the same number of problems solved are then ranked according to the least total time. The total time is the sum of time consumed for each problem solved.
 
 If a tie still exists, teams will be ranked according to the time of the first accepted run.
@@ -143,6 +170,9 @@ If a tie still exists, teams will be ranked according to the time of the first a
 The time consumed for a solved problem is the time elapsed from the beginning of the contest to the submittal of the accepted run, with an additional twenty (20) minutes for every rejected run for that problem (excluding compilation errors). There is no time consumed for a problem that is not solved. A live scoreboard will be available for both the contestants and the coaches. The scoreboard will be frozen one (1) hour before the conclusion of the contest.
 
 # Disqualification
+
+<br />
+<hr />
 
 1. **Undermining the legitimacy of the contest.** Teams may be disqualified if the organizing committee reasonably believes that they have attempted to undermine the legitimacy of the competition, by engaging in activities including (but not limited to):
 
@@ -157,6 +187,9 @@ The time consumed for a solved problem is the time elapsed from the beginning of
 
 # Awards
 
+<br />
+<hr />
+
 Certificates and souvenirs will be given to all the participants while monetary prizes will be given to the top three (3) teams, which are as follows:
 
 - Champion team: Php 12,000
@@ -164,6 +197,9 @@ Certificates and souvenirs will be given to all the participants while monetary 
 - Second runner-up team: Php 6,000
 
 # Changes to the Rules
+
+<br />
+<hr />
 
 Mechanics are subject to change. Such changes will be communicated to all registered participants in a timely manner.
 

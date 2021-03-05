@@ -1,26 +1,59 @@
 @import "../../styles/var.scss";
 
 div#faq-layout{
-	color: white;
+	color: $dull-white;
 	width: 80%;
 	padding: 5%;
 	margin: auto;
 	
 	h1#page-title{
-		color: white;
+		color: $dull-white;
 		font-size: 4em;
 		text-align: center;
 		padding: 1.5%;
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid $dull-white;
 		margin-bottom: 2%;
 	}
 
 	h1, strong{
-		color: $acm-yellow;
+		color: $acm-dull-yellow;
+	}
+
+	div{
+		details{
+			list-style: none;
+			summary{
+				color: $acm-dull-yellow;
+				font-size: 2.5em;
+				font-family: "Montserrat";
+				display: flex;
+				align-items: center;
+			}
+			summary::-webkit-details-marker {
+				display: none;
+			}
+			summary::before{
+				content: "►";
+				height: 5%;
+				margin-right: 3%;
+				transition: transform 0.2s;
+				font-size: 0.5em;
+			}
+		}
+		details[open]{
+			summary::before{
+				transform: rotate(90deg);
+			}
+		}
 	}
 	
 	p{
 		margin: 3% 0;
+		text-align: justify;
+		font-family: "Segoe UI Light";
+		*{
+			font-family: "Segoe UI Light";
+		}
 	}
 	
 	a{
@@ -50,9 +83,23 @@ div#faq-layout{
 		h1{
 			margin: 4% 0;
 		}
+
+		div{
+			details{
+				list-style: none;
+				summary{
+					color: $acm-yellow;
+					font-size: 1.25em;
+					font-family: "Montserrat";
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
 		
 		p{
 			margin: 6% 0;
+			font-size: 1em;
 		}
 		
 		li{

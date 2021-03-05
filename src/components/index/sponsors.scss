@@ -3,7 +3,7 @@
 div#sponsors-section{
     margin-top: 5vh;
     h1{
-        color: white;
+        color: $dull-white;
         font-family: "Montserrat";
         text-align: center;
         margin: 3vh 0;
@@ -14,8 +14,8 @@ div#sponsors-section{
         flex-wrap: wrap;
 
         background: rgb(200,200,200);
-        border-top: 3px solid white;
-        border-bottom: 3px solid white;
+        border-top: 3px solid $dull-white;
+        border-bottom: 3px solid $dull-white;
 
         a.sponsor{
             width: 25%;

@@ -55,7 +55,7 @@ export default function Numbers() {
 			{indexData.numbers.map((number) => (
 				<Number iconSrc={number.staticIconSrc} value={number.value} desc={number.description} />
 			))}
-			<Number isSpecial={true} iconSrc="/assets/img/algolympics-logo-gold-2.png" value="One goal" desc="Be the best team to win the competition."/>
+			<Number isSpecial={true} iconSrc="/assets/img/algolympics-logo-white.png" value="One goal" desc="Be the best team to win the competition."/>
 		</div>
 	)
 }
