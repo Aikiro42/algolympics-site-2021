@@ -29,8 +29,6 @@ export default function Component() {
 	)
 	return (
 		<div id="algo-intro-section" class="index-section">
-			<img id="intro-image" src={indexData.intro.staticImageSrc} />
-			<div id="intro-text">
 				<div class="title-container">
 					<h1
 						data-aos="fade-up"
@@ -40,7 +38,12 @@ export default function Component() {
 						What is Algolympics?
 					</h1>
 				</div>
-
+				<img id="intro-image"
+					src={indexData.intro.staticImageSrc}
+					data-aos="fade-up"
+					data-aos-delay="80"
+					data-aos-duration="650"
+				/>
 				<div
 					id="intro-md"
 					dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} 
@@ -48,7 +51,6 @@ export default function Component() {
             		data-aos-delay="80"
             		data-aos-duration="650"
 				/>
-			</div>
 		</div>
 	)
 }

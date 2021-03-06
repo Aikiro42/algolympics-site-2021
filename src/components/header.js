@@ -62,12 +62,12 @@ export default function Header({isIndex}) {
 						<h1><span class="red">ALGO</span><span class="yellow">LYM</span><span class="green">PICS</span> <span class="blue">2021</span></h1>
 					</div>
 					</Link>
-					<div class="navbar">
-						<img class="hamburger-icon" src={hamburgerImg} onClick={() => setNavbarVisible(!navbarVisible)}/>
-						<div class={navbarVisible ? "navlinks visible" : "navlinks"}>
+					<img class="hamburger-icon" src={hamburgerImg} onClick={() => setNavbarVisible(!navbarVisible)}/>
+					<div class={navbarVisible ? "navbar visible" : "navbar"}>
+						<div class="navlinks">
 							<Navlink linkName="LIVE" href="/live/" />
 							<Navlink linkName="Mechanics" href="/mechanics/" />
-							<Navlink linkName="Probsets" href="/probsets/" />
+							<Navlink linkName="Problem Sets" href="/probsets/" />
 							<Navlink linkName="FAQ" href="/faq/" />
 							<Navlink linkName="UP ACM" href="http://upacm.net" />
 						</div>

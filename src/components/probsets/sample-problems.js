@@ -17,7 +17,7 @@ function SampleProblem({name, link, background}){
 export default function SampleProblems() {
 	return (
 		<div id="sample-problems-section" class="incompressible">
-			<h1>Sample Probsets</h1>
+			<h1>Sample Problem Sets</h1>
 			<div id="samples">
 				{indexData.probsets.samples.map((sample) => {
 					return(

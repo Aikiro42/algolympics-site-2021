@@ -52,15 +52,14 @@ div.header{
 		div.title:active{
 			background: rgba(1, 130, 172, 0.125);
 		}
-		
+		img.hamburger-icon{
+			display: none;
+		}
 		div.navbar{
 			height: 100%;
 			display: flex;
 			align-items: center;
 			padding: 0 $header-height*0.15;
-			img.hamburger-icon{
-				display: none;
-			}
 			div.navlinks{
 					
 				display: flex;
@@ -192,29 +191,36 @@ div.header.top{
 					display: none;
 				}
 			}
+			img.hamburger-icon{
+				position: fixed;
+				right: 0;
+				z-index: 9;
+				display: block;
+				$hamburger-size-dimension-ratio: 0.4;
+				width: $m-header-height * $hamburger-size-dimension-ratio;
+				height: $m-header-height * $hamburger-size-dimension-ratio;
+				padding: $m-header-height*((1 - $hamburger-size-dimension-ratio) / 2);
+				align-self: flex-end;
+			}
+
 			div.navbar{
+				background: $acm-black;
+				position: fixed;
+				right: 0;
+				z-index: 8;
 				width: 70%;
+				height: 100%;
 				padding: 0;
 				flex-direction: column;
 				justify-content: flex-start;
 				align-items: stretch;
-				
-				
-				img.hamburger-icon{
-					display: block;
-					$hamburger-size-dimension-ratio: 0.4;
-					width: $m-header-height * $hamburger-size-dimension-ratio;
-					height: $m-header-height * $hamburger-size-dimension-ratio;
-					padding: $m-header-height*((1 - $hamburger-size-dimension-ratio) / 2);
-					align-self: flex-end;
-				}
-				
+				transform: translateX(100%);
+				transition: 0.2s;
 				div.navlinks{
+					margin-top: $m-header-height;
 					height: auto;
-					transform: translateX(100%);
 					flex-direction: column;
 					align-items: stretch;
-					transition: 0.2s;
 					a{
 						span.navlink{
 							width: 100%;
@@ -223,6 +229,8 @@ div.header.top{
 							border-bottom: 0;
 							justify-content: center;
 							padding: 2vh 0;
+							border-bottom: 1px solid $acm-dull-blue;
+							margin-bottom: 0;
 						}
 						span.navlink#live{
 							width: 100%;
@@ -242,11 +250,12 @@ div.header.top{
 							background: rgb(252*0.125,146*0.125,0);
 						}
 					}
-				}
-				
-				div.navlinks.visible{
-					transform: translateX(0);
-				}
+				}				
+			}
+
+			div.navbar.visible{
+				transform: translateX(0%);
+				box-shadow: 0 0 25px 0 black;
 			}
 			
 		}

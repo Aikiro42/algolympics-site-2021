@@ -16,17 +16,17 @@
 	
 	"numbers": [
 		{
-			"value": "500+",
+			"value": "700+",
 			"description" : "participants that took the challenge from the past six years",
 			"staticIconSrc": "/assets/img/people-icon-colored.png"
 		},
 		{
-			"value": "19",
+			"value": "23",
 			"description" : "teams that made it to the top spots",
 			"staticIconSrc": "/assets/img/leaderboard-icon-colored.png"
 		},
 		{
-			"value": "20+",
+			"value": "30+",
 			"description" : "universities that joined the competition accross Luzon",
 			"staticIconSrc": "/assets/img/location-icon-colored.png"
 		}
@@ -187,6 +187,13 @@
 				"problems": "algolympics-2016-problems.pdf",
 				"solutions": "",
 				"solutionSketches": "algolympics-2016-solution-sketches.pdf",
+				"codeSolutions": ""
+			},
+			{
+				"year": "2015",
+				"problems": "algolympics-2015-problems.pdf",
+				"solutions": "algolympics-2015-solutions.pdf",
+				"solutionSketches": "algolympics-2015-solution-sketches.pdf",
 				"codeSolutions": ""
 			}
 		]

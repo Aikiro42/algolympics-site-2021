@@ -27,6 +27,9 @@ div#prev-algo-probsets-section{
                 margin: 0 1%;
                 flex: 1 1 10%;
             }
+            a:active{
+                background: $acm-black;
+            }
             a.problems:hover{
                 background: rgba(253, 27, 0,0.5);
             }
@@ -40,7 +43,9 @@ div#prev-algo-probsets-section{
                 background: rgba(1, 130, 172,0.5);
             }
             a.unavailable{
-                display: none;
+                pointer-events: none;
+                opacity: 0.25;
+                cursor: default;
             }
         }
         div.probset:nth-child(even){

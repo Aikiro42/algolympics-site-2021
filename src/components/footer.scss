@@ -41,32 +41,39 @@ div.footer{
 				a.other-link{
 					display: flex;
 					align-items: center;
-					width: 40%;
+					// width: 40%;
+					width: 90%;
 					border-left: $hidden-border;
 					transition: 0.2s;
 				}
+				/*
 				a.other-link:nth-child(odd){
 					border-right: $hidden-border;
 					border-left: 0;
 				}
+				*/
 				a.other-link:hover{
 					background: $link-hover-bg-left;
 					border-left: $link-hover-border;
 				}
+				/*
 				a.other-link:nth-child(odd):hover{
 					background: $link-hover-bg-right;
 					border-left: 0;
 					border-right: $link-hover-border;
 				}
+				*/
 				a.other-link:active{
 					background: $link-active-bg-left;
 					border-left: $link-active-border;
 				}
+				/*
 				a.other-link:nth-child(odd):active{
 					background: $link-active-bg-right;
 					border-left: 0;
 					border-right: $link-active-border;
 				}
+				*/
 			}
 
 			div.contacts.section{
@@ -88,7 +95,7 @@ div.footer{
 				a.contact{
 					cursor: pointer;
 				}
-
+				
 				a.contact:hover{
 					border-left: 1px solid $dull-white;
 					background: linear-gradient(90deg, rgba(200,200,200,0.125) 0%, rgba(200,200,200,0) 100%);

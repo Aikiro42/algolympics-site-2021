@@ -16,15 +16,19 @@ function Probset({year, problems, solutionSketches, solutions, codeSolutions}) {
 	var codeSolutions_dir = fileDir + codeSolutions;
 	var no_codeSolutions = ""
 	if(problems == ""){
+		problems_dir = ""
 		no_problems = "unavailable"
 	}
 	if(solutions == ""){
+		solutions_dir = ""
 		no_solutions = "unavailable"
 	}
 	if(solutionSketches == ""){
+		solutionSketches_dir = ""
 		no_solutionSketches = "unavailable"
 	}
 	if(codeSolutions == ""){
+		codeSolutions_dir = ""
 		no_codeSolutions = "unavailable"
 	}
 

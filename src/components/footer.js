@@ -87,8 +87,8 @@ export default function Footer() {
 					<div class="other-links section">
 						<h2>UPACM</h2>
 						<a class="other-link" href="https://upacm.net">Website</a>
-						<a class="other-link" href="https://upacm.net">Automaton</a>
-						<a class="other-link" href="https://upacm.net">Privacy Policy</a>
+						<a class="other-link" href="https://upacm.github.io/acm-website/automaton/">Automaton</a>
+						<a class="other-link" href="https://upacm.net/privacy-policy/">Privacy Policy</a>
 					</div>
 					<div class="contacts section">
 						<h2>Contact Us</h2>
