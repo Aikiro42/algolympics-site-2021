@@ -10,14 +10,21 @@ div#mechanics-layout{
 		font-size: 4em;
 		text-align: center;
 		padding: 1.5%;
-		border-bottom: 1px solid $dull-white;
+		border-bottom: 1px solid rgb(50,50,50);
+		margin: auto;
 		margin-bottom: 2%;
+		width: 75%;
+	}
+
+	h1{
+		font-size: 1.75em;
 	}
 	
 	p{
 		margin: 3% 0;
 		text-align: justify;
 		line-height: 2em;
+		font-size: 1.125em;
 	}
 
 	hr{
@@ -36,7 +43,7 @@ div#mechanics-layout{
 	li{
 		margin: 2% 0;
 		margin-left: 5%;
-		font-size: 1.125em;
+		font-size: 1em;
 	}
 	
 }
@@ -51,28 +58,21 @@ div#mechanics-layout{
 			padding: 3%;
 			padding-left: 0;
 			margin-bottom: 8%;
+			width: 100%;
+			width: 75%;
 		}
 		
 		h1{
 			margin-top: 8%;
 			margin-bottom: 1%;
 			font-size: 1.5em;
-			color: white;
 		}
 		
 		p{
 			margin: 6% 0;
 			font-size: 1em;
 		}
-		
-		a{
-			color: $acm-orange;
-		}
-		
-		strong{
-			color: $acm-red;
-		}
-		
+				
 		li{
 			margin: 2% 0;
 			margin-left: 5%;

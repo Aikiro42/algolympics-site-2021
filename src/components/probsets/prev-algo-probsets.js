@@ -44,12 +44,26 @@ function Probset({year, problems, solutionSketches, solutions, codeSolutions}) {
 }
 
 export default function PrevAlgoProbsets() {
+
+	let prev_probsets = [...indexData.probsets.previous];
+	prev_probsets.sort(
+		(a, b) => {
+			if(a.year < b.year){
+				return 1;
+			}else if(a.year > b.year){
+				return -1;
+			}else{
+				return 0;
+			}
+		}
+	);
+	console.log(prev_probsets);
 	
 	return (
 		<div id="prev-algo-probsets-section" class="incompressible">
 			<h1>Previous Problems</h1>
 			<div id="probsets">
-				{indexData.probsets.previous.map((probset) => {
+				{prev_probsets.map((probset) => {
 					return (
 						<Probset year={probset.year}
 							problems={probset.problems}
@@ -60,5 +74,5 @@ export default function PrevAlgoProbsets() {
 				})}
 			</div>
 		</div>
-	)
+	);
 }

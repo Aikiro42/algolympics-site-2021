@@ -17,6 +17,14 @@ function Social({type, link}){
 			social_logo="/assets/img/social/twitter-logo.png";
 			link_type = "Twitter";
 			break;
+		case "linkedin":
+			social_logo="/assets/img/social/linkedin-logo.png";
+			link_type = "LinkedIn";
+			break;
+		case "youtube":
+			social_logo="/assets/img/social/youtube-logo.png";
+			link_type = "Youtube";
+			break;
 		default:
 			social_logo="/placeholder-logo.png";
 			link_href = "";
@@ -26,7 +34,6 @@ function Social({type, link}){
 	return (
 		<a class="social" href={link_href}>
 			<img src={social_logo} />
-			<span>{link_type}</span>
 		</a>
 	)
 }
@@ -66,20 +73,22 @@ function Contact({type, name, link}) {
 		return (
 			<a class="contact" href={link}>
 				<img src={contact_logo} />
-				{name}
+				<span>{name}</span>
 			</a>
 		)
 	}else{
 		return (
 			<div class="contact">
 				<img src={contact_logo} />
-				{name}
+				<span>{name}</span>
 			</div>
 		)
 	}
 }
 
 export default function Footer() {
+	let year = new Date();
+	let year_str = year.getFullYear();
 	return (
 		<div class="footer incompressible">
 			<div class="top">
@@ -100,16 +109,18 @@ export default function Footer() {
 					</div>
 					<div class="socials section">
 						<h2>Connect with us!</h2>
+						<div class="social-links">
 						{indexData.socials.map((social) => {
 							return(
 								<Social type={social.type} link={social.link} />
 							)
 						})}
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="bottom">
-					<span class="copyright">© 2019 Association for Computing Machinery - University of the Philippines Diliman Student Chapter, Inc.</span>
+					<span class="copyright">© {year_str} Association for Computing Machinery - University of the Philippines Diliman Student Chapter, Inc.</span>
 			</div>
 		</div>
 	)
