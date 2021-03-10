@@ -1,27 +1,20 @@
 import React from "react"
 
-import Header from "../../2021/components/header.js"
-import Footer from "../../2021/components/footer.js"
-import BlankContentfiller from "../../2021/components/blank-content-filler.js"
+import Layout from "../../2021/components/layout.js"
+import SpacedComponents from "../../2021/components/spaced-components.js"
 
 import PrevAlgoProbsets from "../../2021/components/problems/prev-algo-probsets.js"
 import SampleProblems from "../../2021/components/problems/sample-problems.js"
 import PracticeRecommendations from "../../2021/components/problems/practice-recommendations.js"
 
-import "../../2021/styles/global.scss"
-
-export default function problems() {
+export default function Problems() {
   return (
-    <>
-      <Header isIndex={false} />
-      <div className="content wrapper">
-        <BlankContentfiller height="100px" color="none" />
+    <Layout isIndex={false} contentClass="incompressible" contentId="problems">
+      <SpacedComponents>
         <SampleProblems />
         <PrevAlgoProbsets />
         <PracticeRecommendations />
-        <BlankContentfiller height="100px" color="none" />
-      </div>
-      <Footer />
-    </>
+      </SpacedComponents>
+    </Layout>
   )
 }

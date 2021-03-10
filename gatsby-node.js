@@ -2,7 +2,7 @@ exports.createPages = ({ actions }) => {
   const { createRedirect } = actions
 
   // redirect these links to the current year
-  const currentYear = 2021;
+  const currentYear = 2021
   createRedirect({
     fromPath: "/",
     toPath: `/${currentYear}/`,

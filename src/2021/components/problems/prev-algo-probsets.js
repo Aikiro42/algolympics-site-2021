@@ -52,7 +52,10 @@ function Probset({
       <a href={solutions_dir} className={"solutions " + no_solutions}>
         Solutions
       </a>
-      <a href={codeSolutions_dir} className={"code-solutions " + no_codeSolutions}>
+      <a
+        href={codeSolutions_dir}
+        className={"code-solutions " + no_codeSolutions}
+      >
         Code Solutions
       </a>
     </div>
