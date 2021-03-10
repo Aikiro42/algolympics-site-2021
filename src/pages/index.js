@@ -14,19 +14,19 @@ import Sponsors from "../components/index/sponsors.js"
 import "../styles/global.scss"
 
 export default function Home() {
-	return (
-		<>
-			<Header isIndex={true} />
-			<Landing />
-			<div class="content wrapper incompressible">
-				<SpacedComponents>
-					<AlgoIntro />
-					<Numbers />
-					<Prizes />
-					<Sponsors />
-				</SpacedComponents>
-			</div>
-			<Footer />
-		</>
-	)
+  return (
+    <>
+      <Header isIndex={true} />
+      <Landing />
+      <div class="content wrapper incompressible">
+        <SpacedComponents>
+          <AlgoIntro />
+          <Numbers />
+          <Prizes />
+          <Sponsors />
+        </SpacedComponents>
+      </div>
+      <Footer />
+    </>
+  )
 }
