@@ -1,9 +1,9 @@
 import React from "react"
 
+import SpacedComponents from "../components/spaced-components.js"
+
 import Header from "../components/header.js"
 import Footer from "../components/footer.js"
-
-import SpacedComponents from "../layouts/spaced-components.js"
 
 import Countdown from "../components/live/countdown.js"
 import Scoreboards from "../components/live/scoreboards.js"
