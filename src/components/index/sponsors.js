@@ -2,7 +2,7 @@ import React from "react"
 
 import "./sponsors.scss"
 
-import indexData from "../../json/index.json"
+import contestDetails from "../../data/details.json"
 
 function Sponsor({ staticLogoSrc, sponsorLink }) {
   return (
@@ -17,7 +17,7 @@ export default function Sponsors() {
     <div id="sponsors-section" class="index-section">
       <h1>Our Sponsors</h1>
       <div id="sponsors-container">
-        {indexData.sponsors.map(sponsor => {
+        {contestDetails.sponsors.map(sponsor => {
           return (
             <Sponsor
               staticLogoSrc={sponsor.staticLogoSrc}

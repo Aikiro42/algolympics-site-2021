@@ -2,7 +2,7 @@ import React from "react"
 
 import "./prev-algo-probsets.scss"
 
-import indexData from "../../json/index.json"
+import contestDetails from "../../data/details.json"
 
 function Probset({
   year,
@@ -60,7 +60,7 @@ function Probset({
 }
 
 export default function PrevAlgoProbsets() {
-  let prev_probsets = [...indexData.probsets.previous]
+  let prev_probsets = [...contestDetails.probsets.previous]
   prev_probsets.sort((a, b) => {
     if (a.year < b.year) {
       return 1

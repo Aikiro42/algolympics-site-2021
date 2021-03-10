@@ -1,7 +1,7 @@
 import React from "react"
 
 import "./footer.scss"
-import indexData from "../json/index.json"
+import contestDetails from "../data/details.json"
 
 function Social({ type, link }) {
   var social_logo = ""
@@ -92,7 +92,7 @@ export default function Footer() {
           </div>
           <div class="contacts section">
             <h2>Contact Us</h2>
-            {indexData.contacts.map(contact => {
+            {contestDetails.contacts.map(contact => {
               return (
                 <Contact
                   link={contact.link}
@@ -105,7 +105,7 @@ export default function Footer() {
           <div class="socials section">
             <h2>Connect with us!</h2>
             <div class="social-links">
-              {indexData.socials.map(social => {
+              {contestDetails.socials.map(social => {
                 return <Social type={social.type} link={social.link} />
               })}
             </div>

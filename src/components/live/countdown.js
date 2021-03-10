@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 
 import "./countdown.scss"
-import indexData from "../../json/index.json"
+import contestDetails from "../../data/details.json"
 
 const calculateTimeLeft = () => {
-  const difference = +new Date(`${indexData.eventDeadline}`) - +new Date()
+  const difference = +new Date(`${contestDetails.eventDeadline}`) - +new Date()
   let timeLeft = {}
   if (difference > 0) {
     let formatted_seconds = String(Math.floor((difference / 1000) % 60))

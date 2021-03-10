@@ -1,7 +1,7 @@
 import React from "react"
 
 import "./prizes.scss"
-import indexData from "../../json/index.json"
+import contestDetails from "../../data/details.json"
 
 import "aos/dist/aos.css"
 
@@ -63,18 +63,18 @@ export default function Prizes() {
     <div id="prizes-section" class="index-section">
       <Banner
         place="second"
-        prize={indexData.prizes.second}
-        winner={indexData.winners.second}
+        prize={contestDetails.prizes.second}
+        winner={contestDetails.winners.second}
       />
       <Banner
         place="first"
-        prize={indexData.prizes.first}
-        winner={indexData.winners.first}
+        prize={contestDetails.prizes.first}
+        winner={contestDetails.winners.first}
       />
       <Banner
         place="third"
-        prize={indexData.prizes.third}
-        winner={indexData.winners.third}
+        prize={contestDetails.prizes.third}
+        winner={contestDetails.winners.third}
       />
     </div>
   )

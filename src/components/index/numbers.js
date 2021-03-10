@@ -1,7 +1,7 @@
 import React from "react"
 
 import "./numbers.scss"
-import indexData from "../../json/index.json"
+import contestDetails from "../../data/details.json"
 
 import "aos/dist/aos.css"
 
@@ -49,7 +49,7 @@ function Number({ value, desc, iconSrc, isSpecial }) {
 export default function Numbers() {
   return (
     <div id="numbers-section" class="index-section">
-      {indexData.numbers.map(number => (
+      {contestDetails.numbers.map(number => (
         <Number
           iconSrc={number.staticIconSrc}
           value={number.value}

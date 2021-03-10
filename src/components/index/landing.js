@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 
 import "./landing.scss"
-import indexData from "../../json/index.json"
+import contestDetails from "../../data/details.json"
 
 export default function Landing() {
   const [opaque, setOpaque] = useState(false)
@@ -45,12 +45,12 @@ export default function Landing() {
         id="landing-image"
         alt="Landing"
         class={opaque ? "scrolled incompressible" : "incompressible"}
-        src={indexData.landing.staticBgSrc}
+        src={contestDetails.landing.staticBgSrc}
       />
       <div id="landing-text" class="incompressible">
         <div class="wrapper">
           <img
-            src={indexData.landing.bigAlgoLogoSrc}
+            src={contestDetails.landing.bigAlgoLogoSrc}
             alt="Big Algolympics Logo"
           />
           <h1>

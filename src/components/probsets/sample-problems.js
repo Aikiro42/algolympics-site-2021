@@ -2,7 +2,7 @@ import React from "react"
 
 import "./sample-problems.scss"
 
-import indexData from "../../json/index.json"
+import contestDetails from "../../data/details.json"
 
 function SampleProblem({ name, link, background }) {
   return (
@@ -17,7 +17,7 @@ export default function SampleProblems() {
     <div id="sample-problems-section" class="incompressible">
       <h1>Sample Problem Sets</h1>
       <div id="samples">
-        {indexData.probsets.samples.map(sample => {
+        {contestDetails.probsets.samples.map(sample => {
           return (
             <SampleProblem
               name={sample.name}

@@ -1,7 +1,7 @@
 import React from "react"
 
 import "./social.scss"
-import indexData from "../../json/index.json"
+import contestDetails from "../../data/details.json"
 
 function SocialItem({ type, link }) {
   var social_logo = ""
@@ -31,7 +31,7 @@ export default function Social() {
     <div id="contact-social-section">
       <h1>Socials</h1>
       <div id="social-list">
-        {indexData.socials.map(social => {
+        {contestDetails.socials.map(social => {
           return <SocialItem type={social.type} link={social.link} />
         })}
       </div>

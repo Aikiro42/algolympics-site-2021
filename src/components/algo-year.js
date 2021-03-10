@@ -1,10 +1,10 @@
 import React from "react"
 
 import "./algo-year.scss"
-import indexData from "../json/index.json"
+import contestDetails from "../../data/details.json"
 
 export default function AlgoYear() {
-  var year = indexData.landing.year
+  var year = contestDetails.landing.year
   return (
     <span class="algo-year">
       <span class="red">{year[0]}</span>

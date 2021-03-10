@@ -31,7 +31,7 @@ export default function Faq({ data }) {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "markdown/faq.md/" } }
+      filter: { fileAbsolutePath: { regex: "/faq.md/" } }
     ) {
       edges {
         node {

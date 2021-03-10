@@ -31,7 +31,7 @@ export default function Mechanics({ data }) {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "markdown/mechanics.md/" } }
+      filter: { fileAbsolutePath: { regex: "/mechanics.md/" } }
     ) {
       edges {
         node {

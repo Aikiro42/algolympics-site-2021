@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./algo-intro.scss"
-import indexData from "../../json/index.json"
+import contestDetails from "../../data/details.json"
 
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -37,7 +37,7 @@ export default function AlgoIntro() {
       </div>
       <img
         id="intro-image"
-        src={indexData.intro.staticImageSrc}
+        src={contestDetails.intro.staticImageSrc}
         alt="Intro"
         data-aos="fade-up"
         data-aos-delay="80"
