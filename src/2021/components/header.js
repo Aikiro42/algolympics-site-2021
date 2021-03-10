@@ -56,7 +56,7 @@ export default function Header({ isIndex }) {
     <>
       <div class={scrolled || !isIndex ? "header" : "header top"}>
         <div class="wrapper">
-          <Link to="../">
+          <Link to="/2021/">
             <div class="title">
               <img src={headerImg} alt="Header" />
               <h1>
