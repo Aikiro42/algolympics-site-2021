@@ -77,7 +77,7 @@ export default function Footer() {
         <div className="wrapper">
           <div className="other-links section">
             <h2>UPACM</h2>
-            <a className="other-link" href="https://upacm.net">
+            <a className="other-link" href="http://upacm.net">
               Website
             </a>
             <a
@@ -86,7 +86,7 @@ export default function Footer() {
             >
               Automaton
             </a>
-            <a className="other-link" href="https://upacm.net/privacy-policy/">
+            <a className="other-link" href="http://upacm.net/privacy-policy">
               Privacy Policy
             </a>
           </div>
