@@ -2,39 +2,40 @@ exports.createPages = ({ actions }) => {
   const { createRedirect } = actions
 
   // redirect these links to the current year
+  const currentYear = 2021;
   createRedirect({
     fromPath: "/",
-    toPath: "/2021/",
+    toPath: `/${currentYear}/`,
     redirectInBrowser: true,
     isPermanent: true,
   })
   createRedirect({
     fromPath: "/live/",
-    toPath: "/2021/live/",
+    toPath: `/${currentYear}/live/`,
     redirectInBrowser: true,
     isPermanent: true,
   })
   createRedirect({
     fromPath: "/mechanics/",
-    toPath: "/2021/mechanics/",
+    toPath: `/${currentYear}/mechanics/`,
     redirectInBrowser: true,
     isPermanent: true,
   })
   createRedirect({
     fromPath: "/problems/",
-    toPath: "/2021/problems/",
+    toPath: `/${currentYear}/problems/`,
     redirectInBrowser: true,
     isPermanent: true,
   })
   createRedirect({
     fromPath: "/faq/",
-    toPath: "/2021/faq/",
+    toPath: `/${currentYear}/faq/`,
     redirectInBrowser: true,
     isPermanent: true,
   })
   createRedirect({
     fromPath: "/contact/",
-    toPath: "/2021/contact/",
+    toPath: `/${currentYear}/contact/`,
     redirectInBrowser: true,
     isPermanent: true,
   })
