@@ -40,24 +40,24 @@
 
   "winners": {
     "first": {
-      "logoSrc": "/2021/assets/img/logo/admu.png",
-      "profileSrc": "/2021/assets/img/winners/bruh-group-photo.png",
+      "logoSrc": "/2020/assets/img/logo/admu.png",
+      "profileSrc": "/2020/assets/img/winners/bruh-group-photo.png",
       "name": "bruh",
       "university": "Ateneo De Manila University",
       "members": ["Luis Alvarado", "Ivan Castillo", "Tom Binbinon"],
       "link": "https://codeforces.com"
     },
     "second": {
-      "logoSrc": "/2021/assets/img/logo/upd.png",
-      "profileSrc": "/2021/assets/img/winners/dai-gurren-group-photo.png",
+      "logoSrc": "/2020/assets/img/logo/upd.png",
+      "profileSrc": "/2020/assets/img/winners/dai-gurren-group-photo.png",
       "name": "Dai-Gurren",
       "university": "University of the Philippines - Diliman Campus",
       "members": ["Uzumaki Naruto", "Haruno Sakura", "Uchiha Sasuke"],
       "link": "https://codeforces.com"
     },
     "third": {
-      "logoSrc": "/2021/assets/img/logo/admu.png",
-      "profileSrc": "/2021/assets/img/winners/blossom-group-photo.png",
+      "logoSrc": "/2020/assets/img/logo/admu.png",
+      "profileSrc": "/2020/assets/img/winners/blossom-group-photo.png",
       "name": "Blossom",
       "university": "Ateneo De Manila University",
       "members": ["Luis Alvarado", "Leandro Paat", "Joana Biado"],
