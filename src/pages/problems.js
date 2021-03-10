@@ -4,13 +4,13 @@ import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import BlankContentfiller from "../components/blank-content-filler.js"
 
-import PrevAlgoProbsets from "../components/probsets/prev-algo-probsets.js"
-import SampleProblems from "../components/probsets/sample-problems.js"
-import PracticeRecommendations from "../components/probsets/practice-recommendations.js"
+import PrevAlgoProbsets from "../components/problems/prev-algo-probsets.js"
+import SampleProblems from "../components/problems/sample-problems.js"
+import PracticeRecommendations from "../components/problems/practice-recommendations.js"
 
 import "../styles/global.scss"
 
-export default function Probsets() {
+export default function problems() {
   return (
     <>
       <Header isIndex={false} />

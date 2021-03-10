@@ -11,7 +11,7 @@ function Probset({
   solutions,
   codeSolutions,
 }) {
-  var fileDir = "/probsets/" + year + "/"
+  var fileDir = "/problems/" + year + "/"
   var problems_dir = fileDir + problems
   var no_problems = ""
   var solutions_dir = fileDir + solutions
@@ -60,7 +60,7 @@ function Probset({
 }
 
 export default function PrevAlgoProbsets() {
-  let prev_probsets = [...contestDetails.probsets.previous]
+  let prev_probsets = [...contestDetails.problems.previous]
   prev_probsets.sort((a, b) => {
     if (a.year < b.year) {
       return 1
@@ -74,7 +74,7 @@ export default function PrevAlgoProbsets() {
 
   return (
     <div id="prev-algo-probsets-section" class="incompressible">
-      <h1>Previous Problems</h1>
+      <h1>Previous Problem Sets</h1>
       <div id="probsets">
         {prev_probsets.map(probset => {
           return (

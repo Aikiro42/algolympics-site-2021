@@ -76,7 +76,7 @@ export default function Header({ isIndex }) {
             <div class="navlinks">
               <Navlink linkName="LIVE" href="/live/" />
               <Navlink linkName="Mechanics" href="/mechanics/" />
-              <Navlink linkName="Problem Sets" href="/probsets/" />
+              <Navlink linkName="Problems" href="/problems/" />
               <Navlink linkName="FAQ" href="/faq/" />
               <Navlink linkName="UP ACM" href="http://upacm.net" />
             </div>

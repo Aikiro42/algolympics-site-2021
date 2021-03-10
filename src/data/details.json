@@ -129,37 +129,37 @@
     }
   ],
 
-  "probsets": {
+  "problems": {
     "samples": [
       {
         "name": "Santa's List",
-        "link": "/probsets/sample/santas-list.pdf",
-        "background": "/probsets/sample/sample-bg.png"
+        "link": "/problems/sample/santas-list.pdf",
+        "background": "/problems/sample/sample-bg.png"
       },
       {
         "name": "Make an Entrance",
-        "link": "/probsets/sample/make-an-entrance.pdf",
-        "background": "/probsets/sample/sample-bg.png"
+        "link": "/problems/sample/make-an-entrance.pdf",
+        "background": "/problems/sample/sample-bg.png"
       },
       {
         "name": "Incomplete Model Kits",
-        "link": "/probsets/sample/incomplete-model-kits.pdf",
-        "background": "/probsets/sample/sample-bg.png"
+        "link": "/problems/sample/incomplete-model-kits.pdf",
+        "background": "/problems/sample/sample-bg.png"
       },
       {
         "name": "Alien Defense",
-        "link": "/probsets/sample/alien-defense.pdf",
-        "background": "/probsets/sample/sample-bg.png"
+        "link": "/problems/sample/alien-defense.pdf",
+        "background": "/problems/sample/sample-bg.png"
       },
       {
         "name": "Make Gawa This Problem",
-        "link": "/probsets/sample/make-gawa-this-problem.pdf",
-        "background": "/probsets/sample/sample-bg.png"
+        "link": "/problems/sample/make-gawa-this-problem.pdf",
+        "background": "/problems/sample/sample-bg.png"
       },
       {
         "name": "Guardians of the Lunatics",
-        "link": "/probsets/sample/guardians-of-the-lunatics.pdf",
-        "background": "/probsets/sample/sample-bg.png"
+        "link": "/problems/sample/guardians-of-the-lunatics.pdf",
+        "background": "/problems/sample/sample-bg.png"
       }
     ],
     "previous": [

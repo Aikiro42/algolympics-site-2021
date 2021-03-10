@@ -15,9 +15,9 @@ function SampleProblem({ name, link, background }) {
 export default function SampleProblems() {
   return (
     <div id="sample-problems-section" class="incompressible">
-      <h1>Sample Problem Sets</h1>
+      <h1>Sample Problems</h1>
       <div id="samples">
-        {contestDetails.probsets.samples.map(sample => {
+        {contestDetails.problems.samples.map(sample => {
           return (
             <SampleProblem
               name={sample.name}
