@@ -4,7 +4,7 @@ $header-top-height: 100px;
 $header-height: 80px;
 $m-header-height: 70px;
 
-div.header {
+.header {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -14,13 +14,13 @@ div.header {
 	color: $dull-white;
 	transition: 0.2s;
 	box-shadow: 0 0 25px 0 black;
-	div.wrapper {
+	.wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		height: 100%;
 
-		div.title {
+		.title {
 		
 			display: flex;
 			flex-direction: row;
@@ -45,73 +45,71 @@ div.header {
 			}
 		}
 		
-		div.title:hover {
+		.title:hover {
 			background: rgba(255,255,255,0.125);
 		}
 		
-		div.title:active {
+		.title:active {
 			background: rgba(1, 130, 172, 0.125);
 		}
 		img.hamburger-icon {
 			display: none;
 		}
-		div.navbar {
+		.navbar {
 			height: 100%;
 			display: flex;
 			align-items: center;
 			padding: 0 $header-height*0.15;
-			div.navlinks {
-					
+			.navlinks {
+				
 				display: flex;
 				align-items: center;
 				justify-content: space-around;
 				height: 100%;
-				a {
-					height: 100%;
+				.navlink {
 					display: flex;
 					align-items: center;
-					span.navlink {
-						border-bottom: $hidden-border;
-						font-weight: bold;
-						margin-bottom: -1px;
-						padding: 1vh 1vw;
-						display: flex;
-						align-items: center;
-						transition: 0.2s;
-					}
 
-					span.navlink#live {
-						background: #303030;
-						padding: 0 0;
-						height: 100%;
-						width: $header-height;
-						display: flex;
-						justify-content: center;
-						border-bottom: none;
-						margin-bottom: 0;
-						align-self: stretch;
-						border-left: 1px solid $acm-dull-blue;
-						border-right: 1px solid $acm-dull-blue;
-						margin-right: calc(1vw - 1px);
-					}
+					border-bottom: $hidden-border;
+					font-weight: bold;
+					margin-bottom: -1px;
+					padding: 1vh 1vw;
+					display: flex;
+					align-items: center;
+					transition: 0.2s;
+				}
 
-					span.navlink#live:hover {
-						background: #134d78;
-					}
-					span.navlink#live:active {
-						background: #173462;
-					}
-					
-					
-					span.navlink:hover {
-						background: $link-hover-bg;
-						border-bottom: $link-hover-border;
-					}
-					
-					span.navlink:active {
-						background: $link-active-bg;
-						border-bottom: $link-active-border;
-					}
+				.navlink.live {
+					background: #303030;
+					padding: 0 0;
+					height: 100%;
+					width: $header-height;
+					display: flex;
+					justify-content: center;
+					border-bottom: none;
+					margin-bottom: 0;
+					align-self: stretch;
+					border-left: 1px solid $acm-dull-blue;
+					border-right: 1px solid $acm-dull-blue;
+					margin-right: calc(1vw - 1px);
+				}
+
+				.navlink.live:hover {
+					background: #134d78;
+				}
+				.navlink.live:active {
+					background: #173462;
+				}
+				
+				
+				.navlink:hover {
+					background: $link-hover-bg;
+					border-bottom: $link-hover-border;
+				}
+				
+				.navlink:active {
+					background: $link-active-bg;
+					border-bottom: $link-active-border;
 				}
 			}
 			
@@ -119,16 +117,16 @@ div.header {
 	}
 }
 
-div#header-spacer {
+.header-spacer {
 	margin-top: $header-height;
 }
 
-div.header.top {
+.header.top {
 	background: rgba(0,0,0,0.25);
 	height: $header-top-height;
-	div.wrapper {
+	.wrapper {
 		a {
-			div.title {
+			.title {
 				margin-left: $header-top-height*0.15;
 				border-radius: 5%;
 				h1 {
@@ -136,16 +134,16 @@ div.header.top {
 				}
 			}
 		}
-		div.navbar {
-			div.navlinks {
-				a#live {
-					span.navlink#live {
+		.navbar {
+			.navlinks {
+				.live {
+					.navlink.live {
 						background: rgba(48,48,48,0.25);
 					}
-					span.navlink#live:hover {
+					.navlink.live:hover {
 						background: #134d78;
 					}
-					span.navlink#live:active {
+					.navlink.live:active {
 						background: #173462;
 					}
 				}
@@ -155,14 +153,12 @@ div.header.top {
 }
 
 @media (min-width: 1920px) {
-	div.header {
-		div.wrapper {
-			div.navbar {
-				div.navlinks {
-					a {
-						span.navlink {
-							padding: 0.01*1080px 0.01*1920px;
-						}
+	.header {
+		.wrapper {
+			.navbar {
+				.navlinks {
+					.navlink {
+						padding: 0.01*1080px 0.01*1920px;
 					}
 				}
 			}
@@ -172,15 +168,15 @@ div.header.top {
 
 @media (max-width: 1000px) {
 
-	div.header {
+	.header {
 	
 		height: $m-header-height;
 		
-		div.wrapper {
+		.wrapper {
 		
 		align-items: stretch;
 		
-			div.title {
+			.title {
 				padding: $m-header-height*0.15;
 				margin-left: 0;
 				img {
@@ -203,7 +199,7 @@ div.header.top {
 				align-self: flex-end;
 			}
 
-			div.navbar {
+			.navbar {
 				background: $acm-black;
 				position: fixed;
 				right: 0;
@@ -216,44 +212,42 @@ div.header.top {
 				align-items: stretch;
 				transform: translateX(100%);
 				transition: 0.2s;
-				div.navlinks {
+				.navlinks {
 					margin-top: $m-header-height;
 					height: auto;
 					flex-direction: column;
 					align-items: stretch;
-					a {
-						span.navlink {
-							width: 100%;
-							background: $acm-black;
-							text-align: right;
-							border-bottom: 0;
-							justify-content: center;
-							padding: 2vh 0;
-							border-bottom: 1px solid $acm-dull-blue;
-							margin-bottom: 0;
-						}
-						span.navlink#live {
-							width: 100%;
-							height: auto;
-							text-align: right;
-							border-bottom: 0;
-							justify-content: center;
-							padding: 2vh 0;
-							margin-right: 0;
-							background: $acm-dull-blue;
-						}
-						
-						span.navlink:hover {
-							background: rgb(31,31,31);
-						}
-						span.navlink:active {
-							background: rgb(252*0.125,146*0.125,0);
-						}
+					.navlink {
+						width: 100%;
+						background: $acm-black;
+						text-align: right;
+						border-bottom: 0;
+						justify-content: center;
+						padding: 2vh 0;
+						border-bottom: 1px solid $acm-dull-blue;
+						margin-bottom: 0;
+					}
+					.navlink.live {
+						width: 100%;
+						height: auto;
+						text-align: right;
+						border-bottom: 0;
+						justify-content: center;
+						padding: 2vh 0;
+						margin-right: 0;
+						background: $acm-dull-blue;
+					}
+					
+					.navlink:hover {
+						background: rgb(31,31,31);
+					}
+					.navlink:active {
+						background: rgb(252*0.125,146*0.125,0);
 					}
 				}				
 			}
 
-			div.navbar.visible {
+			.navbar.visible {
 				transform: translateX(0%);
 				box-shadow: 0 0 25px 0 black;
 			}
@@ -262,28 +256,78 @@ div.header.top {
 	}
 	
 	
-	div#header-spacer {
+	.header-spacer {
 		margin-top: $m-header-height;
 	}
 
 	
-	div.header.top {
+	.header.top {
 		height: $m-header-height;
-		div.wrapper {
+		.wrapper {
 			a {
-				div.title {
+				.title {
 					margin-left: 0;
 				}
 			}
-			div.navbar {
-				div.navlinks {
-					a#live {
-						span#live.navlink {
+			.navbar {
+				.navlinks {
+					.live {
+						.live.navlink {
 							background: $acm-dull-blue;
 						}
 					}
 				}
 			}
 		}
+	}
+}
+
+.navigation-hamburger {
+	cursor: pointer;
+}
+
+.nav-dropdown {
+	.nav-dropdown-button {
+		display: flex;
+		cursor: pointer;
+	}
+	.nav-dropdown-content {
+		display: none;
+		min-width: 160px;
+		background-color: $acm-black;
+		box-shadow: 0 0 25px 0 black;
+		z-index: 1;
+		.nav-dropdown-link {
+			height: 30px;
+			display: flex;
+			align-items: center;
+
+			border-bottom: $hidden-border;
+			font-weight: bold;
+			margin-bottom: -1px;
+			padding: 1vh 1vw;
+			display: flex;
+			align-items: center;
+			transition: 0.2s;
+		}
+		.nav-dropdown-link:hover {
+			background: $link-hover-bg;
+			border-bottom: $link-hover-border;
+		}
+	}
+}
+
+.nav-dropdown-content.visible {
+	display: block;
+}
+
+@media (min-width: 1001px) {
+	.nav-dropdown {
+		.nav-dropdown-content {
+			position: absolute;
+		}
+	}
+	.nav-dropdown:hover .nav-dropdown-content {
+		display: block;
 	}
 }

@@ -1,32 +1,68 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import { Link } from "gatsby"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 
 import hamburgerImg from "../assets/images/hamburger-icon.png"
 import headerImg from "../assets/images/header-icon.png"
 
 import "./header.scss"
 
-function Navlink({ linkName, href }) {
-  if (linkName === "LIVE") {
-    return (
-      <Link to={href} id="live">
-        <span class="navlink" id="live">
-          LIVE
-        </span>
-      </Link>
-    )
-  }
-  if (linkName === "UP ACM") {
-    return (
-      <a href={href}>
-        <span class="navlink">{linkName}</span>
-      </a>
-    )
-  }
+import globalDetails from "../../data/details.json"
+
+function NavDropdown({ name, links }) {
+  const [visible, setVisible] = useState(false)
+
+  const handleKeydown = useCallback(
+    event => {
+      if (event.key === "Enter") {
+        setVisible(!visible)
+      }
+    },
+    [visible]
+  )
+
   return (
-    <Link to={href}>
-      <span class="navlink">{linkName}</span>
-    </Link>
+    <div class="nav-dropdown navlink-outer">
+      <div
+        role="button"
+        class="nav-dropdown-button"
+        tabIndex={0}
+        onClick={() => setVisible(!visible)}
+        onKeyDown={handleKeydown}
+      >
+        <span class="navlink">
+          {name}&nbsp;
+          <FontAwesomeIcon icon={faCaretDown} />
+        </span>
+      </div>
+      <div
+        class={
+          visible ? "nav-dropdown-content visible" : "nav-dropdown-content"
+        }
+      >
+        {links.map(({ label, href, external }) => {
+          if (external) {
+            return (
+              <a href={href} class="nav-dropdown-link">
+                {label}
+              </a>
+            )
+          } else {
+            return (
+              <Link
+                to={href}
+                class="nav-dropdown-link"
+                activeClassName="nav-dropdown-link"
+              >
+                {label}
+              </Link>
+            )
+          }
+        })}
+      </div>
+    </div>
   )
 }
 
@@ -52,6 +88,15 @@ export default function Header({ isIndex }) {
     }
   })
 
+  const handleKeydown = useCallback(
+    event => {
+      if (event.key === "Enter") {
+        setNavbarVisible(!navbarVisible)
+      }
+    },
+    [navbarVisible]
+  )
+
   return (
     <>
       <div class={scrolled || !isIndex ? "header" : "header top"}>
@@ -66,24 +111,61 @@ export default function Header({ isIndex }) {
               </h1>
             </div>
           </Link>
-          <img
-            class="hamburger-icon"
-            src={hamburgerImg}
-            alt="Hamburger"
+          <div
+            role="button"
+            class="navigation-hamburger"
+            tabIndex={0}
             onClick={() => setNavbarVisible(!navbarVisible)}
-          />
+            onKeyDown={handleKeydown}
+          >
+            <img class="hamburger-icon" src={hamburgerImg} alt="Hamburger" />
+          </div>
           <div class={navbarVisible ? "navbar visible" : "navbar"}>
-            <div class="navlinks">
-              <Navlink linkName="LIVE" href="/2021/live/" />
-              <Navlink linkName="Mechanics" href="/2021/mechanics/" />
-              <Navlink linkName="Problems" href="/2021/problems/" />
-              <Navlink linkName="FAQ" href="/2021/faq/" />
-              <Navlink linkName="UP ACM" href="http://upacm.net" />
-            </div>
+            <nav class="navlinks">
+              <Link
+                class="navlink live"
+                activeClassName="navlink live"
+                to="/2021/live/"
+              >
+                LIVE
+              </Link>
+              <Link
+                class="navlink"
+                activeClassName="navlink"
+                to="/2021/mechanics/"
+              >
+                Mechanics
+              </Link>
+              <Link
+                class="navlink"
+                activeClassName="navlink"
+                to="/2021/problems/"
+              >
+                Problems
+              </Link>
+              <Link class="navlink" activeClassName="navlink" to="/2021/faq/">
+                FAQ
+              </Link>
+              <NavDropdown
+                name="Archive"
+                links={globalDetails.yearsLinks.map(
+                  ({ year, link, external }) => {
+                    return {
+                      label: `${year}`,
+                      href: link,
+                      external,
+                    }
+                  }
+                )}
+              />
+              <a class="navlink" href="http://upacm.net">
+                UP ACM
+              </a>
+            </nav>
           </div>
         </div>
       </div>
-      {!isIndex ? <div id="header-spacer"></div> : null}
+      {!isIndex ? <div class="header-spacer"></div> : null}
     </>
   )
 }
