@@ -7,30 +7,30 @@ import elimsData from "../../data/elims-scoreboard.json"
 function Scoreboard({ title, problems, scores }) {
   return (
     <>
-      <h1 class="table-title">{title}</h1>
-      <table class="scoreboard">
-        <tr class="headers">
+      <h1 className="table-title">{title}</h1>
+      <table className="scoreboard">
+        <tr className="headers">
           <th>Rank</th>
           <th>CodeForces Name</th>
           <th>Score</th>
           {problems.map(problem => {
-            return <th class="item-score">{problem}</th>
+            return <th className="item-score">{problem}</th>
           })}
         </tr>
         {scores.map(scoreEntry => {
           return (
-            <tr class="score-entry">
-              <td class="rank">{scoreEntry.Rank}</td>
-              <td class="name">
-                <p class="cf-name">{scoreEntry["CF Name"]}</p>
-                <p class="school">{scoreEntry.School}</p>
+            <tr className="score-entry">
+              <td className="rank">{scoreEntry.Rank}</td>
+              <td className="name">
+                <p className="cf-name">{scoreEntry["CF Name"]}</p>
+                <p className="school">{scoreEntry.School}</p>
               </td>
-              <td class="score">
-                <p class="total-score">{scoreEntry.Score}</p>
-                <p class="penalty">{scoreEntry.Penalty}</p>
+              <td className="score">
+                <p className="total-score">{scoreEntry.Score}</p>
+                <p className="penalty">{scoreEntry.Penalty}</p>
               </td>
               {problems.map(problem => {
-                return <td class="item-score">{scoreEntry[problem]}</td>
+                return <td className="item-score">{scoreEntry[problem]}</td>
               })}
             </tr>
           )

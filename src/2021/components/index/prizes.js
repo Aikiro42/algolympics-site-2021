@@ -30,28 +30,28 @@ function Banner({ place, prize, winner }) {
 
   return (
     <div
-      class="banner"
+      className="banner"
       id={place}
       data-aos="fade-up"
       data-aos-delay={aos_delay}
       data-aos-duration="650"
     >
-      <img class="trophy-img" alt="Trophy" src={trophy_img_src} />
-      <div class="banner-content">
-        <div class="prize">
+      <img className="trophy-img" alt="Trophy" src={trophy_img_src} />
+      <div className="banner-content">
+        <div className="prize">
           <h2>{prize_heading}</h2>
           <p>{prize}</p>
         </div>
         <h3>2020 Winner</h3>
-        <a class="winner" href={winner.link}>
+        <a className="winner" href={winner.link}>
           <img
-            class="winner-profile"
+            className="winner-profile"
             alt="Winner Profile"
             src={winner.profileSrc}
           />
-          <img class="team-logo" alt="Team Logo" src={winner.logoSrc} />
-          <span class="team-name">{winner.name}</span>
-          <span class="team-univ">{winner.university}</span>
+          <img className="team-logo" alt="Team Logo" src={winner.logoSrc} />
+          <span className="team-name">{winner.name}</span>
+          <span className="team-univ">{winner.university}</span>
         </a>
       </div>
     </div>
@@ -60,7 +60,7 @@ function Banner({ place, prize, winner }) {
 
 export default function Prizes() {
   return (
-    <div id="prizes-section" class="index-section">
+    <div id="prizes-section" className="index-section">
       <Banner
         place="second"
         prize={contestDetails.prizes.second}

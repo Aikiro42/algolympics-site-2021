@@ -23,7 +23,7 @@ function Social({ type, link }) {
       break
   }
   return (
-    <a class="social" href={link}>
+    <a className="social" href={link}>
       <img src={social_logo} alt="Social Logo" />
     </a>
   )
@@ -53,14 +53,14 @@ function Contact({ type, name, link }) {
   }
   if (link !== "#") {
     return (
-      <a class="contact" href={link}>
+      <a className="contact" href={link}>
         <img src={contact_logo} alt="Contact Logo" />
         <span>{name}</span>
       </a>
     )
   } else {
     return (
-      <div class="contact">
+      <div className="contact">
         <img src={contact_logo} alt="Contact Logo" />
         <span>{name}</span>
       </div>
@@ -72,25 +72,25 @@ export default function Footer() {
   let year = new Date()
   let year_str = year.getFullYear()
   return (
-    <div class="footer incompressible">
-      <div class="top">
-        <div class="wrapper">
-          <div class="other-links section">
+    <div className="footer incompressible">
+      <div className="top">
+        <div className="wrapper">
+          <div className="other-links section">
             <h2>UPACM</h2>
-            <a class="other-link" href="https://upacm.net">
+            <a className="other-link" href="https://upacm.net">
               Website
             </a>
             <a
-              class="other-link"
+              className="other-link"
               href="https://upacm.github.io/acm-website/automaton/"
             >
               Automaton
             </a>
-            <a class="other-link" href="https://upacm.net/privacy-policy/">
+            <a className="other-link" href="https://upacm.net/privacy-policy/">
               Privacy Policy
             </a>
           </div>
-          <div class="contacts section">
+          <div className="contacts section">
             <h2>Contact Us</h2>
             {contestDetails.contacts.map(contact => {
               return (
@@ -102,9 +102,9 @@ export default function Footer() {
               )
             })}
           </div>
-          <div class="socials section">
+          <div className="socials section">
             <h2>Connect with us!</h2>
-            <div class="social-links">
+            <div className="social-links">
               {contestDetails.socials.map(social => {
                 return <Social type={social.type} link={social.link} />
               })}
@@ -112,8 +112,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div class="bottom">
-        <span class="copyright">
+      <div className="bottom">
+        <span className="copyright">
           © {year_str} Association for Computing Machinery - University of the
           Philippines Diliman Student Chapter, Inc.
         </span>

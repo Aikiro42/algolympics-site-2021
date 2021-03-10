@@ -6,7 +6,7 @@ import contestDetails from "../../data/details.json"
 function SocialItem({ type, link }) {
   var social_logo = `/2021/assets/img/social/${type}-logo.png`
   return (
-    <a class="social-item" href={link}>
+    <a className="social-item" href={link}>
       <img src={social_logo} alt="Social Logo" />
       <span>{link}</span>
     </a>

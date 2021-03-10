@@ -12,8 +12,8 @@ export default function Faq({ data }) {
   return (
     <>
       <Header isIndex={false} />
-      <div class="content wrapper index">
-        <div id="faq-layout" class="md-layout">
+      <div className="content wrapper index">
+        <div id="faq-layout" className="md-layout">
           <h1 id="page-title">Frequently Asked Questions</h1>
           <div
             dangerouslySetInnerHTML={{

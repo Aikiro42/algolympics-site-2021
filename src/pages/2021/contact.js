@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <>
       <Header isIndex={false} />
-      <div class="content wrapper incompressible" id="contact">
+      <div className="content wrapper incompressible" id="contact">
         <ParallaxBackground parallaxSrc="/2021/assets/img/background.png" />
         <Map />
         <Social />

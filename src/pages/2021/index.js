@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Header isIndex={true} />
       <Landing />
-      <div class="content wrapper incompressible">
+      <div className="content wrapper incompressible">
         <SpacedComponents>
           <AlgoIntro />
           <Numbers />

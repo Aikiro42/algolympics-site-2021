@@ -12,8 +12,8 @@ export default function Mechanics({ data }) {
   return (
     <>
       <Header isIndex={false} />
-      <div class="content wrapper index">
-        <div id="mechanics-layout" class="md-layout">
+      <div className="content wrapper index">
+        <div id="mechanics-layout" className="md-layout">
           <h1 id="page-title">Mechanics</h1>
           <div
             dangerouslySetInnerHTML={{

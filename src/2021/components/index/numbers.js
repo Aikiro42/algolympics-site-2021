@@ -8,18 +8,18 @@ import "aos/dist/aos.css"
 function Number({ value, desc, iconSrc, isSpecial }) {
   if (isSpecial) {
     return (
-      <div class="number special">
+      <div className="number special">
         <div
-          class="val-container"
+          className="val-container"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="650"
         >
-          <img class="icon" src={iconSrc} alt="Icon" />
-          <h1 class="value">{value}</h1>
+          <img className="icon" src={iconSrc} alt="Icon" />
+          <h1 className="value">{value}</h1>
         </div>
         <p
-          class="description"
+          className="description"
           data-aos="fade-up"
           data-aos-delay="100"
           data-aos-duration="650"
@@ -32,23 +32,23 @@ function Number({ value, desc, iconSrc, isSpecial }) {
 
   return (
     <div
-      class="number"
+      className="number"
       data-aos="fade-up"
       data-aos-delay="80"
       data-aos-duration="650"
     >
-      <div class="val-container">
-        <img class="icon" src={iconSrc} alt="Icon" />
-        <h1 class="value">{value}</h1>
+      <div className="val-container">
+        <img className="icon" src={iconSrc} alt="Icon" />
+        <h1 className="value">{value}</h1>
       </div>
-      <p class="description">{desc}</p>
+      <p className="description">{desc}</p>
     </div>
   )
 }
 
 export default function Numbers() {
   return (
-    <div id="numbers-section" class="index-section">
+    <div id="numbers-section" className="index-section">
       {contestDetails.numbers.map(number => (
         <Number
           iconSrc={number.staticIconSrc}

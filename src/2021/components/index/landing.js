@@ -44,20 +44,20 @@ export default function Landing() {
       <img
         id="landing-image"
         alt="Landing"
-        class={opaque ? "scrolled incompressible" : "incompressible"}
+        className={opaque ? "scrolled incompressible" : "incompressible"}
         src={contestDetails.landing.staticBgSrc}
       />
-      <div id="landing-text" class="incompressible">
-        <div class="wrapper">
+      <div id="landing-text" className="incompressible">
+        <div className="wrapper">
           <img
             src={contestDetails.landing.bigAlgoLogoSrc}
             alt="Big Algolympics Logo"
           />
           <h1>
-            <span class="red">ALGO</span>
-            <span class="yellow">LYM</span>
-            <span class="green">PICS</span>
-            <span class="blue"> 2021</span>
+            <span className="red">ALGO</span>
+            <span className="yellow">LYM</span>
+            <span className="green">PICS</span>
+            <span className="blue"> 2021</span>
           </h1>
         </div>
       </div>

@@ -6,7 +6,7 @@ import contestDetails from "../../data/details.json"
 
 function SampleProblem({ name, link, background }) {
   return (
-    <a class="sample-problem" href={link}>
+    <a className="sample-problem" href={link}>
       <span>{name}</span>
     </a>
   )
@@ -14,7 +14,7 @@ function SampleProblem({ name, link, background }) {
 
 export default function SampleProblems() {
   return (
-    <div id="sample-problems-section" class="incompressible">
+    <div id="sample-problems-section" className="incompressible">
       <h1>Sample Problems</h1>
       <div id="samples">
         {contestDetails.problems.samples.map(sample => {

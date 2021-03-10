@@ -29,8 +29,8 @@ export default function AlgoIntro() {
     `
   )
   return (
-    <div id="algo-intro-section" class="index-section">
-      <div class="title-container">
+    <div id="algo-intro-section" className="index-section">
+      <div className="title-container">
         <h1 data-aos="fade-up" data-aos-delay="80" data-aos-duration="650">
           What is Algolympics?
         </h1>

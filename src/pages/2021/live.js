@@ -14,7 +14,7 @@ export default function Live() {
   return (
     <>
       <Header isIndex={false} />
-      <div class="content wrapper incompressible">
+      <div className="content wrapper incompressible">
         <SpacedComponents>
           <Countdown />
           <Scoreboards />

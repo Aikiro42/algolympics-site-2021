@@ -38,21 +38,21 @@ function Probset({
   }
 
   return (
-    <div class="probset">
+    <div className="probset">
       <h2>Algolympics {year}</h2>
-      <a href={problems_dir} class={"problems " + no_problems}>
+      <a href={problems_dir} className={"problems " + no_problems}>
         Problems
       </a>
       <a
         href={solutionSketches_dir}
-        class={"solution-sketches " + no_solutionSketches}
+        className={"solution-sketches " + no_solutionSketches}
       >
         Solution Sketches
       </a>
-      <a href={solutions_dir} class={"solutions " + no_solutions}>
+      <a href={solutions_dir} className={"solutions " + no_solutions}>
         Solutions
       </a>
-      <a href={codeSolutions_dir} class={"code-solutions " + no_codeSolutions}>
+      <a href={codeSolutions_dir} className={"code-solutions " + no_codeSolutions}>
         Code Solutions
       </a>
     </div>
@@ -72,7 +72,7 @@ export default function PrevAlgoProbsets() {
   })
 
   return (
-    <div id="prev-algo-probsets-section" class="incompressible">
+    <div id="prev-algo-probsets-section" className="incompressible">
       <h1>Previous Problem Sets</h1>
       <div id="probsets">
         {prev_probsets.map(probset => {

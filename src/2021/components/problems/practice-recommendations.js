@@ -22,8 +22,8 @@ export default function PracticeRecommendations() {
     `
   )
   return (
-    <div id="practice-recommendations-section" class="incompressible">
-      <div class="title-container">
+    <div id="practice-recommendations-section" className="incompressible">
+      <div className="title-container">
         <h1>Recommendations</h1>
       </div>
 

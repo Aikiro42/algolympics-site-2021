@@ -10,7 +10,7 @@ export default function Test() {
   return (
     <>
       <Header isIndex={false} />
-      <div class="content wrapper">
+      <div className="content wrapper">
         <BlankContentfiller height="2000px" color="rgb(25,25,25)" />
       </div>
       <Footer />

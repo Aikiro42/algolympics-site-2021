@@ -14,7 +14,7 @@ export default function problems() {
   return (
     <>
       <Header isIndex={false} />
-      <div class="content wrapper">
+      <div className="content wrapper">
         <BlankContentfiller height="100px" color="none" />
         <SampleProblems />
         <PrevAlgoProbsets />
