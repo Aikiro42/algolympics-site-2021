@@ -56,7 +56,7 @@ export default function Header({ isIndex }) {
     <>
       <div class={scrolled || !isIndex ? "header" : "header top"}>
         <div class="wrapper">
-          <Link to="/">
+          <Link to="../">
             <div class="title">
               <img src={headerImg} alt="Header" />
               <h1>
@@ -74,10 +74,10 @@ export default function Header({ isIndex }) {
           />
           <div class={navbarVisible ? "navbar visible" : "navbar"}>
             <div class="navlinks">
-              <Navlink linkName="LIVE" href="/live/" />
-              <Navlink linkName="Mechanics" href="/mechanics/" />
-              <Navlink linkName="Problems" href="/problems/" />
-              <Navlink linkName="FAQ" href="/faq/" />
+              <Navlink linkName="LIVE" href="/2021/live/" />
+              <Navlink linkName="Mechanics" href="/2021/mechanics/" />
+              <Navlink linkName="Problems" href="/2021/problems/" />
+              <Navlink linkName="FAQ" href="/2021/faq/" />
               <Navlink linkName="UP ACM" href="http://upacm.net" />
             </div>
           </div>

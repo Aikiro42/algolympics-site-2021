@@ -12,16 +12,16 @@ function Banner({ place, prize, winner }) {
   switch (place) {
     case "first":
       prize_heading = "1st place"
-      trophy_img_src = "/assets/img/trophy-gold.png"
+      trophy_img_src = "/2021/assets/img/trophy-gold.png"
       break
     case "second":
       prize_heading = "2nd place"
-      trophy_img_src = "/assets/img/trophy-silver.png"
+      trophy_img_src = "/2021/assets/img/trophy-silver.png"
       aos_delay = "200"
       break
     case "third":
       prize_heading = "3rd place"
-      trophy_img_src = "/assets/img/trophy-bronze.png"
+      trophy_img_src = "/2021/assets/img/trophy-bronze.png"
       aos_delay = "300"
       break
     default:

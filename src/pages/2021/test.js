@@ -1,10 +1,10 @@
 import React from "react"
 
-import Header from "../components/header.js"
-import Footer from "../components/footer.js"
-import BlankContentfiller from "../components/blank-content-filler.js"
+import Header from "../../2021/components/header.js"
+import Footer from "../../2021/components/footer.js"
+import BlankContentfiller from "../../2021/components/blank-content-filler.js"
 
-import "../styles/global.scss"
+import "../../2021/styles/global.scss"
 
 export default function Test() {
   return (

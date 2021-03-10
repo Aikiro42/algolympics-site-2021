@@ -4,22 +4,9 @@ import "./social.scss"
 import contestDetails from "../../data/details.json"
 
 function SocialItem({ type, link }) {
-  var social_logo = ""
-  var link_href = link
-  switch (type) {
-    case "facebook":
-      social_logo = "/assets/img/social/facebook-logo.png"
-      break
-    case "twitter":
-      social_logo = "/assets/img/social/twitter-logo.png"
-      break
-    default:
-      social_logo = "/placeholder-logo.png"
-      link_href = "mailto:" + link + "?subject=Algolympics 2021"
-      break
-  }
+  var social_logo = `/2021/assets/img/social/${type}-logo.png`
   return (
-    <a class="social-item" href={link_href}>
+    <a class="social-item" href={link}>
       <img src={social_logo} alt="Social Logo" />
       <span>{link}</span>
     </a>

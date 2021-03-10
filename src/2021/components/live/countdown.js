@@ -45,22 +45,22 @@ export default function Countdown() {
   })
 
   return (
-    <div id="countdown-section">
-      <h1 id="label">Algolympics Finals</h1>
-      <h1 id="timer">
-        <span id="days" class="red">
+    <div class="countdown-section">
+      <h1 class="label">Algolympics Finals</h1>
+      <h1 class="timer">
+        <span class="days red">
           {timeLeft.days}
           <span class="label">D</span>
         </span>
-        <span id="days" class="yellow">
+        <span class="days yellow">
           {timeLeft.hours}
           <span class="label">H</span>
         </span>
-        <span id="minutes" class="green">
+        <span class="minutes green">
           {timeLeft.minutes}
           <span class="label">M</span>
         </span>
-        <span id="seconds" class="blue">
+        <span class="seconds blue">
           {timeLeft.seconds}
           <span class="label">S</span>
         </span>

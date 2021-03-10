@@ -11,7 +11,7 @@ function Probset({
   solutions,
   codeSolutions,
 }) {
-  var fileDir = "/problems/" + year + "/"
+  var fileDir = "/" + year + "/problems/"
   var problems_dir = fileDir + problems
   var no_problems = ""
   var solutions_dir = fileDir + solutions
@@ -70,7 +70,6 @@ export default function PrevAlgoProbsets() {
       return 0
     }
   })
-  console.log(prev_probsets)
 
   return (
     <div id="prev-algo-probsets-section" class="incompressible">

@@ -7,16 +7,16 @@ function Social({ type, link }) {
   var social_logo = ""
   switch (type) {
     case "facebook":
-      social_logo = "/assets/img/social/facebook-logo.png"
+      social_logo = "/2021/assets/img/social/facebook-logo.png"
       break
     case "twitter":
-      social_logo = "/assets/img/social/twitter-logo.png"
+      social_logo = "/2021/assets/img/social/twitter-logo.png"
       break
     case "linkedin":
-      social_logo = "/assets/img/social/linkedin-logo.png"
+      social_logo = "/2021/assets/img/social/linkedin-logo.png"
       break
     case "youtube":
-      social_logo = "/assets/img/social/youtube-logo.png"
+      social_logo = "/2021/assets/img/social/youtube-logo.png"
       break
     default:
       social_logo = "/placeholder-logo.png"
@@ -33,19 +33,19 @@ function Contact({ type, name, link }) {
   var contact_logo = ""
   switch (type) {
     case "facebook":
-      contact_logo = "/assets/img/social/facebook-logo.png"
+      contact_logo = "/2021/assets/img/social/facebook-logo.png"
       break
     case "twitter":
-      contact_logo = "/assets/img/social/twitter-logo.png"
+      contact_logo = "/2021/assets/img/social/twitter-logo.png"
       break
     case "email":
-      contact_logo = "/assets/img/social/email-logo.png"
+      contact_logo = "/2021/assets/img/social/email-logo.png"
       break
     case "location":
-      contact_logo = "/assets/img/social/location-logo.png"
+      contact_logo = "/2021/assets/img/social/location-logo.png"
       break
     case "mobile":
-      contact_logo = "/assets/img/social/mobile-logo.png"
+      contact_logo = "/2021/assets/img/social/mobile-logo.png"
       break
     default:
       contact_logo = "/placeholder-logo.png"

@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Header from "../components/header.js"
-import Footer from "../components/footer.js"
-import BlankContentfiller from "../components/blank-content-filler.js"
+import Header from "../../2021/components/header.js"
+import Footer from "../../2021/components/footer.js"
+import BlankContentfiller from "../../2021/components/blank-content-filler.js"
 
-import "../styles/global.scss"
+import "../../2021/styles/global.scss"
 import "./faq.scss"
 
 export default function Faq({ data }) {
