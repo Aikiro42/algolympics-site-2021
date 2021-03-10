@@ -24,28 +24,28 @@ function NavDropdown({ name, links }) {
   )
 
   return (
-    <div class="nav-dropdown navlink-outer">
+    <div className="nav-dropdown navlink-outer">
       <div
         role="button"
-        class="nav-dropdown-button"
+        className="nav-dropdown-button"
         tabIndex={0}
         onClick={() => setVisible(!visible)}
         onKeyDown={handleKeydown}
       >
-        <span class="navlink">
+        <span className="navlink">
           {name}&nbsp;
           <FontAwesomeIcon icon={faCaretDown} />
         </span>
       </div>
       <div
-        class={
+        className={
           visible ? "nav-dropdown-content visible" : "nav-dropdown-content"
         }
       >
         {links.map(({ label, href, external }) => {
           if (external) {
             return (
-              <a href={href} class="nav-dropdown-link">
+              <a href={href} className="nav-dropdown-link">
                 {label}
               </a>
             )
@@ -53,7 +53,7 @@ function NavDropdown({ name, links }) {
             return (
               <Link
                 to={href}
-                class="nav-dropdown-link"
+                className="nav-dropdown-link"
                 activeClassName="nav-dropdown-link"
               >
                 {label}
@@ -99,51 +99,60 @@ export default function Header({ isIndex }) {
 
   return (
     <>
-      <div class={scrolled || !isIndex ? "header" : "header top"}>
-        <div class="wrapper">
+      <div className={scrolled || !isIndex ? "header" : "header top"}>
+        <div className="wrapper">
           <Link to="/2021/">
-            <div class="title">
+            <div className="title">
               <img src={headerImg} alt="Header" />
               <h1>
-                <span class="red">ALGO</span>
-                <span class="yellow">LYM</span>
-                <span class="green">PICS</span> <span class="blue">2021</span>
+                <span className="red">ALGO</span>
+                <span className="yellow">LYM</span>
+                <span className="green">PICS</span>
+                <span className="blue">2021</span>
               </h1>
             </div>
           </Link>
           <div
             role="button"
-            class="navigation-hamburger"
+            className="navigation-hamburger"
             tabIndex={0}
             onClick={() => setNavbarVisible(!navbarVisible)}
             onKeyDown={handleKeydown}
           >
-            <img class="hamburger-icon" src={hamburgerImg} alt="Hamburger" />
+            <img
+              className="hamburger-icon"
+              src={hamburgerImg}
+              alt="Hamburger"
+            />
           </div>
-          <div class={navbarVisible ? "navbar visible" : "navbar"}>
-            <nav class="navlinks">
+          <div className={navbarVisible ? "navbar visible" : "navbar"}>
+            <nav className="navlinks">
               <Link
-                class="navlink live"
+                className="navlink live"
                 activeClassName="navlink live"
                 to="/2021/live/"
               >
                 LIVE
               </Link>
               <Link
-                class="navlink"
+                className="navlink"
                 activeClassName="navlink"
                 to="/2021/mechanics/"
               >
                 Mechanics
               </Link>
               <Link
-                class="navlink"
+                className="navlink"
                 activeClassName="navlink"
                 to="/2021/problems/"
               >
                 Problems
               </Link>
-              <Link class="navlink" activeClassName="navlink" to="/2021/faq/">
+              <Link
+                className="navlink"
+                activeClassName="navlink"
+                to="/2021/faq/"
+              >
                 FAQ
               </Link>
               <NavDropdown
@@ -158,14 +167,14 @@ export default function Header({ isIndex }) {
                   }
                 )}
               />
-              <a class="navlink" href="http://upacm.net">
+              <a className="navlink" href="http://upacm.net">
                 UP ACM
               </a>
             </nav>
           </div>
         </div>
       </div>
-      {!isIndex ? <div class="header-spacer"></div> : null}
+      {!isIndex ? <div className="header-spacer"></div> : null}
     </>
   )
 }
