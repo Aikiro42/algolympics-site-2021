@@ -11,17 +11,17 @@ import PracticeRecommendations from "../components/probsets/practice-recommendat
 import "../styles/global.scss"
 
 export default function Probsets() {
-	return (
-		<>
-			<Header isIndex={false}/>
-			<div class="content wrapper">
-				<BlankContentfiller height="100px" color="none" />
-				<SampleProblems />
-				<PrevAlgoProbsets />
-				<PracticeRecommendations />
-				<BlankContentfiller height="100px" color="none" />
-			</div>
-			<Footer />
-		</>
-	)
+  return (
+    <>
+      <Header isIndex={false} />
+      <div class="content wrapper">
+        <BlankContentfiller height="100px" color="none" />
+        <SampleProblems />
+        <PrevAlgoProbsets />
+        <PracticeRecommendations />
+        <BlankContentfiller height="100px" color="none" />
+      </div>
+      <Footer />
+    </>
+  )
 }

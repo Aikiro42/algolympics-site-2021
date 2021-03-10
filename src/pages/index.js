@@ -13,28 +13,27 @@ import Sponsors from "../components/index/sponsors.js"
 import "../styles/global.scss"
 
 export default function Home() {
-	var sectionSpacing = "100px";
-	return (
-		<>
-			<Header isIndex={true} />
-			<Landing />
-			<div class="content wrapper incompressible">
-				<BlankContentfiller height="50px" color="none" />
+  var sectionSpacing = "100px"
+  return (
+    <>
+      <Header isIndex={true} />
+      <Landing />
+      <div class="content wrapper incompressible">
+        <BlankContentfiller height="50px" color="none" />
 
-				<AlgoIntro />
-				<BlankContentfiller height={sectionSpacing} color="none" />
+        <AlgoIntro />
+        <BlankContentfiller height={sectionSpacing} color="none" />
 
-				<Numbers />
-				<BlankContentfiller height={sectionSpacing} color="none" />
+        <Numbers />
+        <BlankContentfiller height={sectionSpacing} color="none" />
 
-				<Prizes />
-				<BlankContentfiller height={sectionSpacing} color="none" />
+        <Prizes />
+        <BlankContentfiller height={sectionSpacing} color="none" />
 
-				<Sponsors />
-				<BlankContentfiller height={sectionSpacing} color="none" />
-
-			</div>
-			<Footer />
-		</>
-	)
+        <Sponsors />
+        <BlankContentfiller height={sectionSpacing} color="none" />
+      </div>
+      <Footer />
+    </>
+  )
 }

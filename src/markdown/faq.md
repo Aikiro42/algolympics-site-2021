@@ -11,7 +11,6 @@ The Algolympics is an **annual intercollegiate programming competition open to a
 
 For this year, the contest will be split into two: an elimination round and a final round. The elimination round is a free-to-enter round of Algolympics held on Codeforces while the final round is the event where teams that fit the criteria laid out in the rules and mechanics compete for the prize, in exchange for a minimal registration fee.
 
-
 # When will the contest be held?
 
 <br />
@@ -32,13 +31,12 @@ The program flow for the final round will be provided to all participants who qu
 
 For more information about proctoring and time limits, kindly read through the rules and mechanics at https://bit.ly/Algo2021Rules.
 
-
 # Who can join?
 
 <br />
 <hr />
 
-A single proper team consists of one (1) to three (3) team members, each of which is: 
+A single proper team consists of one (1) to three (3) team members, each of which is:
 
 - an undergraduate student from a degree program at the sponsoring institution,
 - has not graduated, and
@@ -96,6 +94,7 @@ During the finals, a link will be provided to participants showing the scoreboar
 Monetary prizes will be given to the top three (3) teams of the final round. Claiming will be arranged by our finance committee with the winners directly.
 
 Prizes:
+
 - Champion: **Php 12,000.00**
 - 1st Runner Up: **Php 9,000.00**
 - 2nd Runner Up: **Php 5,000.00**

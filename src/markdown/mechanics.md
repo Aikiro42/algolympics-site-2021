@@ -1,6 +1,7 @@
 ---
 title: "Mechanics"
 ---
+
 # Eligibility of Participants
 
 <br />
@@ -30,7 +31,7 @@ Note that:
 - you may create a team at https://codeforces.com/teams/new and invite your team members
 - you must join as a Codeforces team that only consists of your teammates
 - you must not change your username or team name for the duration of the competition
- 
+
 There is no limit to the number of teams that may register per school, but the number of finalists may be limited to 3 (details seen below under "Invitation to the On-Site Final Round").
 
 # Contest Structure
@@ -39,9 +40,10 @@ There is no limit to the number of teams that may register per school, but the n
 <hr />
 
 The competition will be split into two rounds:
+
 1. The Online Elimination Round
 2. The On-Site Final Round
-Problem statements will be written in English and English only. Communication with judges (clarifications, etc.) will also be in English.
+   Problem statements will be written in English and English only. Communication with judges (clarifications, etc.) will also be in English.
 
 # Online Elimination Round
 
@@ -96,15 +98,16 @@ Each team is required to pay a registration fee amounting to Php 600 to be paid 
 The programming languages for the On-Site Final Round will be restricted to the following languages:
 
 - Java (OpenJDK "11.0.4")
-	- `javac {filename}`
-	- `java -Xss128m -Xmx960m -Xms960m {filename_base}`
+  - `javac {filename}`
+  - `java -Xss128m -Xmx960m -Xms960m {filename_base}`
 - C++ (G++ 7.4.0)
 
-	- `g++ -std=gnu++17 -O3 -o {filename_base}.exe {filename}`
-	- `./{filename_base}.exe`
+  - `g++ -std=gnu++17 -O3 -o {filename_base}.exe {filename}`
+  - `./{filename_base}.exe`
+
 - Python 3.7.0
-	- `python3 -m py_compile {filename}`
-	- `python3 {filename}`
+  - `python3 -m py_compile {filename}`
+  - `python3 {filename}`
 
 Note that we can only guarantee that all problems are solvable in C++ and Java.
 
@@ -148,14 +151,14 @@ The contest will have at least eight (8) problems to be solved in the allotted t
 Submissions for judging from the teams are called runs. Submissions will be handled using the programming contest management system DOMjudge. Each run will be judged by the judges as either accepted or rejected, using machines configured in the same way as the machines used by contestants, and the team will be notified of the results. A rejected run will be reported as one of the following:
 
 - compilation error (the program failed to compile)
-	- includes compile time limit exceeded errors,
-	- includes compile memory limit exceeded errors,
+  - includes compile time limit exceeded errors,
+  - includes compile memory limit exceeded errors,
 - runtime error (program terminates improperly during runtime)
-	- includes memory limit exceeded errors,
-	- includes stack limit exceeded errors,
+  - includes memory limit exceeded errors,
+  - includes stack limit exceeded errors,
 - time limit exceeded (program runtime exceeds the time limit for the problem),
 - wrong answer (output not correct according to the problem checker/grader), or
-	- includes presentation errors (minimal errors in formatting, such as extra spaces)
+  - includes presentation errors (minimal errors in formatting, such as extra spaces)
 
 Teams can also submit clarification requests to the judges using the clarification system made available as part of the contest system.
 
@@ -179,10 +182,11 @@ The time consumed for a solved problem is the time elapsed from the beginning of
 
 1. **Undermining the legitimacy of the contest.** Teams may be disqualified if the organizing committee reasonably believes that they have attempted to undermine the legitimacy of the competition, by engaging in activities including (but not limited to):
 
-	1. Providing false information about themselves during registration or concerning their eligibility.
-	2. Breaching or refusing to comply with the rules.
-	3. Sharing or using from others, whether intentionally or unintentionally, any information about a task, including its content or solution, before the end of a round.
-	4. Displaying behavior considered to be disruptive, unethical, or unsportsmanlike.
+   1. Providing false information about themselves during registration or concerning their eligibility.
+   2. Breaching or refusing to comply with the rules.
+   3. Sharing or using from others, whether intentionally or unintentionally, any information about a task, including its content or solution, before the end of a round.
+   4. Displaying behavior considered to be disruptive, unethical, or unsportsmanlike.
+
 2. **Failing to reply.** Teams may be disqualified if they fail to respond to any request for information from the organizing committee related to Algolympics within seven days of our request or a given deadline.
 3. **Change of username/team name.** The team must not change their Codeforces username/team name at any point in the contest period (from registration until the end of the on-site final round). Any username/team name change is grounds for disqualification.
 4. **Change of Codeforces team.** The team members that make up the Codeforces team must not change for the duration of the competition. Any change in team composition is grounds for immediate disqualification.
@@ -205,5 +209,3 @@ Certificates and souvenirs will be given to all the participants while monetary 
 <hr />
 
 Mechanics are subject to change. Such changes will be communicated to all registered participants in a timely manner.
-
-
