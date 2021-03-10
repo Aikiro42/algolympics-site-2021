@@ -25,5 +25,7 @@ export default function ParallaxBackground({ parallaxSrc }) {
     }
   })
 
-  return <img id="parallax-background" src={parallaxSrc} alt="Parallax Background" />
+  return (
+    <img id="parallax-background" src={parallaxSrc} alt="Parallax Background" />
+  )
 }
