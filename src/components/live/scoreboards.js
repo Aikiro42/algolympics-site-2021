@@ -2,7 +2,7 @@ import React from "react"
 
 import "./scoreboards.scss";
 
-import elimsData from "../../json/2021-elims-scoreboard.json";
+import elimsScores from "../../data/elims-scoreboard.json";
 
 function Scoreboard({title, scoresArray}){
     return (
@@ -110,7 +110,7 @@ function Scoreboard({title, scoresArray}){
 export default function Scoreboards(){
     return(
         <div id="scoreboards-section">
-            <Scoreboard title="Eliminations Scoreboard" scoresArray={elimsData} />
+            <Scoreboard title="Eliminations Scoreboard" scoresArray={elimsScores} />
         </div>
     )
 }
