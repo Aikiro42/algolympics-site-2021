@@ -1,16 +1,16 @@
 @import "./var.scss";
 
-*{
+* {
 	padding: 0;
 	margin: 0;
 	font-family: "Rubik", "Open Sans", sans-serif;
 }
 
-.incompressible{
+.incompressible {
 	min-width: 250px;
 }
 
-code{
+code {
 	font-family: "Courier New", Courier, Consolas, monospace;
 	background: rgb(50,50,50);
 	color: rgb(200,200,200);
@@ -19,43 +19,43 @@ code{
 	border-radius: 5px;
 }
 
-body{
+body {
 	background: rgb(5,5,5);
 }
 
-h1{
+h1 {
 	font-family: "Montserrat";
 	font-weight: 500;
 	font-size: 3em;
 }
 
-p{
+p {
 	font-size: 1.25em;
 }
 
-@media (max-width: 768px){
-	h1{
+@media (max-width: 768px) {
+	h1 {
 		font-size: 2.5em;
 	}
 }
 
-@media (max-width: 400px){
-	h1{
+@media (max-width: 400px) {
+	h1 {
 		font-size: 2em;
 	}
 }
 
-a{
+a {
 	text-decoration: none;
 	color: inherit;
 }
 
-.wrapper{
+.wrapper {
 	max-width: 1366px;
 	margin: auto;
 }
 
-.content{
+.content {
 	box-shadow: 0 0 25px 0 black;
 	background: rgba(24, 24, 24, 0.95);
 }
@@ -77,28 +77,28 @@ a{
 	background: $acm-orange;
 }
 
-span.red{
+span.red {
 	color: $acm-red;
 }
-span.yellow{
+span.yellow {
 	color: $acm-yellow;
 }
-span.green{
+span.green {
 	color: $acm-green;
 }
-span.blue{
+span.blue {
 	color: $acm-blue;
 }
 
-span.red.dull{
+span.red.dull {
 	color: $acm-dull-red;
 }
-span.yellow.dull{
+span.yellow.dull {
 	color: $acm-dull-yellow;
 }
-span.green.dull{
+span.green.dull {
 	color: $acm-dull-green;
 }
-span.blue.dull{
+span.blue.dull {
 	color: $acm-dull-blue;
 }

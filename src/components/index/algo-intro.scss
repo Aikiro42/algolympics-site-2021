@@ -1,13 +1,13 @@
 @import "../../styles/var.scss";
 
-div#algo-intro-section{
+div#algo-intro-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	color: $dull-white;
 	padding: 1.5% 0;
 	
-	img#intro-image{
+	img#intro-image {
 		padding: 3% 1.5%;
 		width: 75%;
 		object-fit: cover;
@@ -15,13 +15,13 @@ div#algo-intro-section{
 		border-radius: 10vh;
 	}
 
-	div.title-container{
+	div.title-container {
 		text-align: center;
 	}
 
-	div#intro-md{
+	div#intro-md {
 		padding: 2vh 10%;
-		p{
+		p {
 			padding: 2.5% 0;
 			text-align: center;
 			line-height: 2em;
@@ -29,28 +29,28 @@ div#algo-intro-section{
 	}
 }
 
-@media (max-width: 1000px){
-	div#algo-intro-section{
+@media (max-width: 1000px) {
+	div#algo-intro-section {
 		
 		padding: 0;
 
-		div.title-container{
+		div.title-container {
 			width: 80%;
-			h1{
+			h1 {
 				height: 15vh;
 				display: flex;
 				align-items: center;
 			}
 		}
 		
-		img#intro-image{
+		img#intro-image {
 			width: 100%;
 			border-radius: 0;
 			padding-top: 5vh;
 		}
 
-		div#intro-md{
-			p{
+		div#intro-md {
+			p {
 				padding: 5vh 0;
 				line-height: 1.5em;
 			}

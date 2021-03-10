@@ -7,7 +7,7 @@ import indexData from "../../json/index.json"
 import AOS from "aos"
 import "aos/dist/aos.css"
 
-export default function Component() {
+export default function AlgoIntro() {
   useEffect(() => {
     AOS.init()
     AOS.refresh()

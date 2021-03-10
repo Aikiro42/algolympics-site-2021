@@ -4,7 +4,7 @@ $header-top-height: 100px;
 $header-height: 80px;
 $m-header-height: 70px;
 
-div.header{
+div.header {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -14,13 +14,13 @@ div.header{
 	color: $dull-white;
 	transition: 0.2s;
 	box-shadow: 0 0 25px 0 black;
-	div.wrapper{
+	div.wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		height: 100%;
 
-		div.title{
+		div.title {
 		
 			display: flex;
 			flex-direction: row;
@@ -28,49 +28,49 @@ div.header{
 			align-items: center;
 			padding: $header-height*0.15;
 			
-			img{
+			img {
 				width: $header-height*0.7;
 				height: $header-height*0.7;
 				object-fit: contain;
 				object-position: center center;
 			}
 			
-			h1{
+			h1 {
 				padding: 0 1vw;
 				font-size: 1.5em;
-				span{
+				span {
 					font-family: "Montserrat";
 					font-weight: bold;
 				}
 			}
 		}
 		
-		div.title:hover{
+		div.title:hover {
 			background: rgba(255,255,255,0.125);
 		}
 		
-		div.title:active{
+		div.title:active {
 			background: rgba(1, 130, 172, 0.125);
 		}
-		img.hamburger-icon{
+		img.hamburger-icon {
 			display: none;
 		}
-		div.navbar{
+		div.navbar {
 			height: 100%;
 			display: flex;
 			align-items: center;
 			padding: 0 $header-height*0.15;
-			div.navlinks{
+			div.navlinks {
 					
 				display: flex;
 				align-items: center;
 				justify-content: space-around;
 				height: 100%;
-				a{
+				a {
 					height: 100%;
 					display: flex;
 					align-items: center;
-					span.navlink{
+					span.navlink {
 						border-bottom: $hidden-border;
 						font-weight: bold;
 						margin-bottom: -1px;
@@ -80,7 +80,7 @@ div.header{
 						transition: 0.2s;
 					}
 
-					span.navlink#live{
+					span.navlink#live {
 						background: #303030;
 						padding: 0 0;
 						height: 100%;
@@ -95,20 +95,20 @@ div.header{
 						margin-right: calc(1vw - 1px);
 					}
 
-					span.navlink#live:hover{
+					span.navlink#live:hover {
 						background: #134d78;
 					}
-					span.navlink#live:active{
+					span.navlink#live:active {
 						background: #173462;
 					}
 					
 					
-					span.navlink:hover{
+					span.navlink:hover {
 						background: $link-hover-bg;
 						border-bottom: $link-hover-border;
 					}
 					
-					span.navlink:active{
+					span.navlink:active {
 						background: $link-active-bg;
 						border-bottom: $link-active-border;
 					}
@@ -119,33 +119,33 @@ div.header{
 	}
 }
 
-div#header-spacer{
+div#header-spacer {
 	margin-top: $header-height;
 }
 
-div.header.top{
+div.header.top {
 	background: rgba(0,0,0,0.25);
 	height: $header-top-height;
-	div.wrapper{
-		a{
-			div.title{
+	div.wrapper {
+		a {
+			div.title {
 				margin-left: $header-top-height*0.15;
 				border-radius: 5%;
-				h1{
+				h1 {
 					display: none;
 				}
 			}
 		}
-		div.navbar{
-			div.navlinks{
-				a#live{
-					span.navlink#live{
+		div.navbar {
+			div.navlinks {
+				a#live {
+					span.navlink#live {
 						background: rgba(48,48,48,0.25);
 					}
-					span.navlink#live:hover{
+					span.navlink#live:hover {
 						background: #134d78;
 					}
-					span.navlink#live:active{
+					span.navlink#live:active {
 						background: #173462;
 					}
 				}
@@ -154,13 +154,13 @@ div.header.top{
 	}
 }
 
-@media (min-width: 1920px){
-	div.header{
-		div.wrapper{
-			div.navbar{
-				div.navlinks{
-					a{
-						span.navlink{
+@media (min-width: 1920px) {
+	div.header {
+		div.wrapper {
+			div.navbar {
+				div.navlinks {
+					a {
+						span.navlink {
 							padding: 0.01*1080px 0.01*1920px;
 						}
 					}
@@ -170,28 +170,28 @@ div.header.top{
 	}
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
-	div.header{
+	div.header {
 	
 		height: $m-header-height;
 		
-		div.wrapper{
+		div.wrapper {
 		
 		align-items: stretch;
 		
-			div.title{
+			div.title {
 				padding: $m-header-height*0.15;
 				margin-left: 0;
-				img{
+				img {
 					width: $m-header-height*0.7;
 					height: $m-header-height*0.7;
 				}
-				h1{
+				h1 {
 					display: none;
 				}
 			}
-			img.hamburger-icon{
+			img.hamburger-icon {
 				position: fixed;
 				right: 0;
 				z-index: 9;
@@ -203,7 +203,7 @@ div.header.top{
 				align-self: flex-end;
 			}
 
-			div.navbar{
+			div.navbar {
 				background: $acm-black;
 				position: fixed;
 				right: 0;
@@ -216,13 +216,13 @@ div.header.top{
 				align-items: stretch;
 				transform: translateX(100%);
 				transition: 0.2s;
-				div.navlinks{
+				div.navlinks {
 					margin-top: $m-header-height;
 					height: auto;
 					flex-direction: column;
 					align-items: stretch;
-					a{
-						span.navlink{
+					a {
+						span.navlink {
 							width: 100%;
 							background: $acm-black;
 							text-align: right;
@@ -232,7 +232,7 @@ div.header.top{
 							border-bottom: 1px solid $acm-dull-blue;
 							margin-bottom: 0;
 						}
-						span.navlink#live{
+						span.navlink#live {
 							width: 100%;
 							height: auto;
 							text-align: right;
@@ -243,17 +243,17 @@ div.header.top{
 							background: $acm-dull-blue;
 						}
 						
-						span.navlink:hover{
+						span.navlink:hover {
 							background: rgb(31,31,31);
 						}
-						span.navlink:active{
+						span.navlink:active {
 							background: rgb(252*0.125,146*0.125,0);
 						}
 					}
 				}				
 			}
 
-			div.navbar.visible{
+			div.navbar.visible {
 				transform: translateX(0%);
 				box-shadow: 0 0 25px 0 black;
 			}
@@ -262,23 +262,23 @@ div.header.top{
 	}
 	
 	
-	div#header-spacer{
+	div#header-spacer {
 		margin-top: $m-header-height;
 	}
 
 	
-	div.header.top{
+	div.header.top {
 		height: $m-header-height;
-		div.wrapper{
-			a{
-				div.title{
+		div.wrapper {
+			a {
+				div.title {
 					margin-left: 0;
 				}
 			}
-			div.navbar{
-				div.navlinks{
-					a#live{
-						span#live.navlink{
+			div.navbar {
+				div.navlinks {
+					a#live {
+						span#live.navlink {
 							background: $acm-dull-blue;
 						}
 					}

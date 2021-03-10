@@ -1,12 +1,13 @@
 @import "../../styles/var.scss";
-div.content#contact{
-    div#map-section{
+
+div.content#contact {
+    div#map-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         color: white;
 
-        h1{
+        h1 {
             display: none;
             width: 80%;
             text-align: center;
@@ -16,7 +17,7 @@ div.content#contact{
             font-size: 4em;
         }
 
-        iframe{ 
+        iframe { 
             width: 50vw;
             height: 500px;
             border-radius: 15px;

@@ -1,12 +1,12 @@
 @import "../styles/var.scss";
 
-div#mechanics-layout{
+div#mechanics-layout {
     color: $dull-white;
     width: 80%;
     padding: 5%;
     margin: auto;
     
-    h1#page-title{
+    h1#page-title {
         font-size: 4em;
         text-align: center;
         padding: 1.5%;
@@ -16,31 +16,31 @@ div#mechanics-layout{
         width: 75%;
     }
 
-    h1{
+    h1 {
         font-size: 1.75em;
     }
     
-    p{
+    p {
         margin: 3% 0;
         text-align: justify;
         line-height: 2em;
         font-size: 1.125em;
     }
 
-    hr{
+    hr {
         border: 1px solid rgb(100,100,100);
     }
     
-    a{
+    a {
         color: $acm-dull-orange;
         text-decoration: underline;
     }
     
-    strong{
+    strong {
         color: $acm-dull-red;
     }
     
-    li{
+    li {
         margin: 2% 0;
         margin-left: 5%;
         font-size: 1em;
@@ -48,10 +48,10 @@ div#mechanics-layout{
     
 }
 
-@media (max-width: 768px){
-    div#mechanics-layout{
+@media (max-width: 768px) {
+    div#mechanics-layout {
         
-        h1#page-title{
+        h1#page-title {
             font-size: 2.5em;
             margin: 0;
             text-align: left;
@@ -62,18 +62,18 @@ div#mechanics-layout{
             width: 75%;
         }
         
-        h1{
+        h1 {
             margin-top: 8%;
             margin-bottom: 1%;
             font-size: 1.5em;
         }
         
-        p{
+        p {
             margin: 6% 0;
             font-size: 1em;
         }
                 
-        li{
+        li {
             margin: 2% 0;
             margin-left: 5%;
             font-size: 1em;

@@ -1,6 +1,6 @@
 @import "../../styles/var.scss";
 
-img#landing-image{
+img#landing-image {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -13,11 +13,11 @@ img#landing-image{
 	transition: opacity 0.2s;
 }
 
-img#landing-image.scrolled{
+img#landing-image.scrolled {
 	opacity: 25%;
 }
 
-div#landing-text{
+div#landing-text {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -28,7 +28,7 @@ div#landing-text{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	div.wrapper{
+	div.wrapper {
 		height: 100%;
 		width: 100%;
 		max-height: calc(1080px);
@@ -37,15 +37,15 @@ div#landing-text{
 		align-items: center;
 		justify-content: center;
 
-		h1{
+		h1 {
 			text-align: center;
-			span{
+			span {
 				font-family: "Montserrat";
 				font-weight: bold;
 			}
 		}
 
-		img{
+		img {
 			width: 20;
 			object-fit: contain;
 			padding-bottom: 2vh;
@@ -55,23 +55,23 @@ div#landing-text{
 	
 }
 
-div#landing-spacer{
+div#landing-spacer {
 	margin-top: 100vh;
 }
 
-@media (max-width: 768px){
-	div#landing-text{
-		div.wrapper{
+@media (max-width: 768px) {
+	div#landing-text {
+		div.wrapper {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			width: 100%;
-			img{
+			img {
 				width: 60vw;
 				height: auto;
 			}
 
-			h1{
+			h1 {
 				font-size: 5vw;
 				width: 100%;
 				text-align: center;

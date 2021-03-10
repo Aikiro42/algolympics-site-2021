@@ -1,11 +1,11 @@
 @import "../../styles/var.scss";
 
-div#countdown-section{
+div#countdown-section {
     color: white;
-    h1#label{
+    h1#label {
         text-align: center;
     }
-    h1#timer{
+    h1#timer {
         margin: auto;
         margin-top: 3%;
         display: flex;
@@ -13,10 +13,10 @@ div#countdown-section{
         text-align: center;
         width: 50%;
         justify-content: space-around;
-        span{
+        span {
             width: 25%;
             font-family: "DS-Digit", monospace;
-            span{
+            span {
                 font-size: 0.2em;
             }
         }
@@ -24,24 +24,24 @@ div#countdown-section{
 }
 
 
-@media (max-width: 800px){
-    div#countdown-section{
-        h1#label{
+@media (max-width: 800px) {
+    div#countdown-section {
+        h1#label {
             font-size: 1.5em;
         }
-        h1#timer{
+        h1#timer {
             font-size: 5em;
             width: 100%;
         }
     }
 }
 
-@media (max-width: 500px){
-    div#countdown-section{
-        h1#label{
+@media (max-width: 500px) {
+    div#countdown-section {
+        h1#label {
             font-size: 1.25em;
         }
-        h1#timer{
+        h1#timer {
             font-size: 3em;
         }
     }
