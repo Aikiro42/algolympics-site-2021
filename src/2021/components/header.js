@@ -54,6 +54,7 @@ function NavDropdown({ name, links }) {
                 to={href}
                 className="nav-dropdown-link"
                 activeClassName="nav-dropdown-link"
+                onClick={() => setVisible(false)}
               >
                 {label}
               </Link>
