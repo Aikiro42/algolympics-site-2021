@@ -41,16 +41,17 @@ function NavDropdown({ name, links }) {
           visible ? "nav-dropdown-content visible" : "nav-dropdown-content"
         }
       >
-        {links.map(({ label, href, external }) => {
+        {links.map(({ label, href, external }, index) => {
           if (external) {
             return (
-              <a href={href} className="nav-dropdown-link">
+              <a key={index} href={href} className="nav-dropdown-link">
                 {label}
               </a>
             )
           } else {
             return (
               <Link
+                key={index}
                 to={href}
                 className="nav-dropdown-link"
                 activeClassName="nav-dropdown-link"

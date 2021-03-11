@@ -4,24 +4,7 @@ import "./footer.scss"
 import contestDetails from "../data/details.json"
 
 function Social({ type, link }) {
-  var social_logo = ""
-  switch (type) {
-    case "facebook":
-      social_logo = "/2021/assets/img/social/facebook-logo.png"
-      break
-    case "twitter":
-      social_logo = "/2021/assets/img/social/twitter-logo.png"
-      break
-    case "linkedin":
-      social_logo = "/2021/assets/img/social/linkedin-logo.png"
-      break
-    case "youtube":
-      social_logo = "/2021/assets/img/social/youtube-logo.png"
-      break
-    default:
-      social_logo = "/placeholder-logo.png"
-      break
-  }
+  var social_logo = `/2021/assets/img/social/${type}-logo.png`
   return (
     <a className="social" href={link}>
       <img src={social_logo} alt="Social Logo" />
@@ -30,27 +13,7 @@ function Social({ type, link }) {
 }
 
 function Contact({ type, name, link }) {
-  var contact_logo = ""
-  switch (type) {
-    case "facebook":
-      contact_logo = "/2021/assets/img/social/facebook-logo.png"
-      break
-    case "twitter":
-      contact_logo = "/2021/assets/img/social/twitter-logo.png"
-      break
-    case "email":
-      contact_logo = "/2021/assets/img/social/email-logo.png"
-      break
-    case "location":
-      contact_logo = "/2021/assets/img/social/location-logo.png"
-      break
-    case "mobile":
-      contact_logo = "/2021/assets/img/social/mobile-logo.png"
-      break
-    default:
-      contact_logo = "/placeholder-logo.png"
-      break
-  }
+  var contact_logo = `/2021/assets/img/social/${type}-logo.png`
   if (link !== "#") {
     return (
       <a className="contact" href={link}>
@@ -95,6 +58,7 @@ export default function Footer() {
             {contestDetails.contacts.map(contact => {
               return (
                 <Contact
+                  key={contact.name}
                   link={contact.link}
                   name={contact.name}
                   type={contact.type}
@@ -106,7 +70,13 @@ export default function Footer() {
             <h2>Connect with us!</h2>
             <div className="social-links">
               {contestDetails.socials.map(social => {
-                return <Social type={social.type} link={social.link} />
+                return (
+                  <Social
+                    key={social.type}
+                    type={social.type}
+                    link={social.link}
+                  />
+                )
               })}
             </div>
           </div>

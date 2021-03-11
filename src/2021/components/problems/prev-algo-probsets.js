@@ -4,7 +4,7 @@ import "./prev-algo-probsets.scss"
 
 import contestDetails from "../../data/details.json"
 
-function Probset({
+function ProbSet({
   year,
   problems,
   solutionSketches,
@@ -80,7 +80,8 @@ export default function PrevAlgoProbsets() {
       <div id="probsets">
         {prev_probsets.map(probset => {
           return (
-            <Probset
+            <ProbSet
+              key={probset.year}
               year={probset.year}
               problems={probset.problems}
               solutionSketches={probset.solutionSketches}

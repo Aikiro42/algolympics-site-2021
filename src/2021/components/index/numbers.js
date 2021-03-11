@@ -49,8 +49,9 @@ function Number({ value, desc, iconSrc, isSpecial }) {
 export default function Numbers() {
   return (
     <div id="numbers-section" className="index-section">
-      {contestDetails.numbers.map(number => (
+      {contestDetails.numbers.map((number, index) => (
         <Number
+          key={index}
           iconSrc={number.staticIconSrc}
           value={number.value}
           desc={number.description}

@@ -19,7 +19,13 @@ export default function Social() {
       <h1>Socials</h1>
       <div id="social-list">
         {contestDetails.socials.map(social => {
-          return <SocialItem type={social.type} link={social.link} />
+          return (
+            <SocialItem
+              key={social.type}
+              type={social.type}
+              link={social.link}
+            />
+          )
         })}
       </div>
     </div>

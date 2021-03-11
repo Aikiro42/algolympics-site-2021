@@ -17,9 +17,10 @@ export default function Sponsors() {
     <div id="sponsors-section" className="index-section">
       <h1>Our Sponsors</h1>
       <div id="sponsors-container">
-        {contestDetails.sponsors.map(sponsor => {
+        {contestDetails.sponsors.map((sponsor, index) => {
           return (
             <Sponsor
+              key={index}
               staticLogoSrc={sponsor.staticLogoSrc}
               sponsorLink={sponsor.sponsorLink}
             />

@@ -20,6 +20,7 @@ export default function SampleProblems() {
         {contestDetails.problems.samples.map(sample => {
           return (
             <SampleProblem
+              key={sample.name}
               name={sample.name}
               link={sample.link}
               background={sample.background}
