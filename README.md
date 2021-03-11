@@ -1,3 +1,5 @@
+**NOTE: This is outdated.** The updated version is [here](https://github.com/Aikiro42/algolympics-site).
+
 # UP ACM Algolympics
 
 This is the repository for the UP ACM Algolympics informational website.
