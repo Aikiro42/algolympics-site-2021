@@ -6,6 +6,7 @@
 
 .table-title {
     text-align: center;
+    margin-bottom: 3%;
 }
 
 .scoreboard {
@@ -40,12 +41,19 @@
             text-align: center;
             .penalty {
                 font-size: 0.75em;
+                color: $acm-dull-red;
             }
+        }
+        .ac{
+            background: #397d38;
+        }
+        .wa{
+            background: $acm-dull-red;
         }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
     .mobile-invisible {
         display: none;
     }

@@ -16,7 +16,7 @@ function Scoreboard({ title, problems, scores }) {
             <th>Score</th>
             {problems.map(problem => {
               return (
-                <th key={problem} className="item-score">
+                <th key={problem} className="item-score mobile-invisible">
                   {problem}
                 </th>
               )
@@ -37,8 +37,15 @@ function Scoreboard({ title, problems, scores }) {
                   <p className="penalty">{scoreEntry.Penalty}</p>
                 </td>
                 {problems.map(problem => {
+                  let check_class = ""
+                  if(scoreEntry[problem] == 1){
+                    check_class = " ac"
+                  }else if(scoreEntry[problem] == 0){
+                    check_class = " wa"
+                  }
+
                   return (
-                    <td key={problem} className="item-score">
+                    <td key={problem} className={"item-score mobile-invisible" + check_class}>
                       {scoreEntry[problem]}
                     </td>
                   )
