@@ -10,7 +10,6 @@ This uses Gatsby and was started via Gatsby's hello-world boilerplate.
   </a>
 </p>
 
-
 ## 🚀 Quick start
 
 1.  **Start developing.**
@@ -29,7 +28,6 @@ This uses Gatsby and was started via Gatsby's hello-world boilerplate.
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
     Open and edit a file in `src/`. Save your changes and the browser will update in real time!
-
 
 ## 🧐 What's inside?
 
@@ -64,12 +62,11 @@ Here are the the top-level files and directories. You see most of these in a typ
 
 1.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
 
-1. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+1.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-1. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+1.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-1. **`README.md`**: A text file containing useful reference information about your project.
-
+1.  **`README.md`**: A text file containing useful reference information about your project.
 
 ## 🎓 Learning Gatsby
 
@@ -79,13 +76,11 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-
 ## Yearly Structure
 
 This is intended to house the websites for all Algolympics iterations starting from 2021. As such, the files are mostly organized by year. Things outside of the year folders are intended to be reusable across several years.
 
 Currently, there's not much reusable stuff, and that's a shame. That should probably be fixed soon.
-
 
 ## Updating to Include the Latest Year
 

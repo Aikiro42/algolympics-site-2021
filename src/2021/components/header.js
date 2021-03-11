@@ -2,9 +2,8 @@ import React, { useState, useEffect, useCallback } from "react"
 import { Link } from "gatsby"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
+import { faCaretDown, faBars } from "@fortawesome/free-solid-svg-icons"
 
-import hamburgerImg from "../assets/images/hamburger-icon.png"
 import headerImg from "../assets/images/header-icon.png"
 
 import "./header.scss"
@@ -114,16 +113,12 @@ export default function Header({ isIndex }) {
           </Link>
           <div
             role="button"
-            className="navigation-hamburger"
+            className="navigation-icon"
             tabIndex={0}
             onClick={() => setNavbarVisible(!navbarVisible)}
             onKeyDown={handleKeydown}
           >
-            <img
-              className="hamburger-icon"
-              src={hamburgerImg}
-              alt="Hamburger"
-            />
+            <FontAwesomeIcon icon={faBars} size="2x" />
           </div>
           <div className={navbarVisible ? "navbar visible" : "navbar"}>
             <nav className="navlinks">
